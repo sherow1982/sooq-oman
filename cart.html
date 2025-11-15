@@ -20,8 +20,8 @@ h1{text-align:center;color:#114c7d;margin-bottom:30px;}
 .cart-summary{margin-top:30px;padding:20px;background:#f8f9fa;border-radius:8px;}
 .summary-row{display:flex;justify-content:space-between;margin-bottom:15px;font-size:18px;}
 .summary-row.total{font-size:24px;font-weight:bold;color:#114c7d;border-top:2px solid #ddd;padding-top:15px;margin-top:15px;}
-.checkout-btn{width:100%;background:#25D366;color:white;border:none;padding:18px;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer;margin-top:20px;}
-.checkout-btn:hover{background:#1da851;}
+.checkout-btn{width:100%;background:#25D366;color:white;border:none;padding:18px;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer;margin-top:20px;transition:all 0.3s;}
+.checkout-btn:hover{background:#1da851;transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -44,10 +44,10 @@ h1{text-align:center;color:#114c7d;margin-bottom:30px;}
 <div class="summary-row"><span>المجموع الفرعي:</span><span id="subtotal">0 ر.ع</span></div>
 <div class="summary-row"><span>الشحن:</span><span style="color:#27ae60;font-weight:bold;">مجاني</span></div>
 <div class="summary-row total"><span>المجموع الكلي:</span><span id="total">0 ر.ع</span></div>
-<button class="checkout-btn" onclick="window.location.href='/checkout.html'">إتمام الطلب</button>
+<button class="checkout-btn" onclick="window.location.href='/checkout.html'">إتمام الطلب عبر واتساب</button>
 </div>
 </div>
-<a href="/index.html" style="display:block;text-align:center;margin-top:20px;color:#114c7d;font-weight:bold;">← متابعة التسوق</a>
+<a href="/index.html" style="display:block;text-align:center;margin-top:20px;color:#114c7d;font-weight:bold;text-decoration:none;">← متابعة التسوق</a>
 </div>
 </div>
 <footer style='background:#ecf0f1;color:#114c7d;text-align:center;padding:20px;margin-top:40px;'>

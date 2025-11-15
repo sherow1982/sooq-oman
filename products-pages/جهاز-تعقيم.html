@@ -73,7 +73,6 @@ function addToCart(title,price,sku){
 let cart=JSON.parse(localStorage.getItem('sooqoman-cart')||'[]');
 cart.push({title,price,sku});
 localStorage.setItem('sooqoman-cart',JSON.stringify(cart));
-alert('تمت الإضافة للسلة ✓');
 window.location.href='/cart.html';
 }
 </script>

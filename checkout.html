@@ -18,8 +18,8 @@ h1{text-align:center;color:#114c7d;margin-bottom:30px;}
 .order-item{padding:10px 0;border-bottom:1px solid #ddd;}
 .order-item:last-child{border-bottom:none;}
 .total-row{display:flex;justify-content:space-between;font-size:20px;font-weight:bold;color:#114c7d;margin-top:15px;padding-top:15px;border-top:2px solid #ddd;}
-.submit-btn{width:100%;background:#25D366;color:white;border:none;padding:18px;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer;}
-.submit-btn:hover{background:#1da851;}
+.submit-btn{width:100%;background:#25D366;color:white;border:none;padding:18px;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer;transition:all 0.3s;}
+.submit-btn:hover{background:#1da851;transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -113,12 +113,7 @@ message+=`${i+1}. ${item.title} - ${item.price} ر.ع (SKU: ${item.sku})%0a`;
 message+=`%0a*المجموع الكلي: ${total.toFixed(2)} ر.ع*%0a*الشحن: مجاني*`;
 window.location.href='https://wa.me/201110760081?text='+message;
 if(!singleProduct){
-setTimeout(()=>{
-if(confirm('هل تريد تفريغ السلة؟')){
 localStorage.removeItem('sooqoman-cart');
-window.location.href='/index.html';
-}
-},2000);
 }
 }
 window.onload=loadOrderSummary;
