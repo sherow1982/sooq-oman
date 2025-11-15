@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إتمام الطلب | سوق عمان</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#f5f5f5;direction:rtl;}
+.container{max-width:900px;margin:0 auto;padding:30px 20px;}
+h1{text-align:center;color:#114c7d;margin-bottom:30px;}
+.checkout-form{background:white;border-radius:12px;padding:30px;box-shadow:0 2px 10px rgba(0,0,0,0.08);}
+.form-group{margin-bottom:20px;}
+.form-group label{display:block;margin-bottom:8px;color:#2c3e50;font-weight:bold;}
+.form-group input,.form-group textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:6px;font-size:16px;font-family:inherit;}
+.form-group textarea{resize:vertical;min-height:80px;}
+.order-summary{background:#f8f9fa;padding:20px;border-radius:8px;margin-bottom:25px;}
+.order-item{padding:10px 0;border-bottom:1px solid #ddd;}
+.order-item:last-child{border-bottom:none;}
+.total-row{display:flex;justify-content:space-between;font-size:20px;font-weight:bold;color:#114c7d;margin-top:15px;padding-top:15px;border-top:2px solid #ddd;}
+.submit-btn{width:100%;background:#25D366;color:white;border:none;padding:18px;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer;}
+.submit-btn:hover{background:#1da851;}
+</style>
+</head>
+<body>
+<header style='background:#114c7d;padding:20px;color:white;font-weight:bold;font-size:22px;text-align:center;'>
+<nav>
+<a href='/index.html' style='color:#fff;margin:0 15px;text-decoration:none;font-size:18px;'>الرئيسية</a>
+<a href='/cart.html' style='color:#fff;margin:0 15px;text-decoration:none;'>السلة 🛒</a>
+<a href='/terms.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشروط</a>
+<a href='/privacy.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الخصوصية</a>
+<a href='/shipping.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشحن</a>
+<a href='/contact.html' style='color:#fff;margin:0 15px;text-decoration:none;'>اتصل بنا</a>
+</nav>
+</header>
+<div class="container">
+<h1>📋 إتمام الطلب</h1>
+<div class="checkout-form">
+<div class="order-summary" id="orderSummary"></div>
+<form onsubmit="submitOrder(event)">
+<div class="form-group">
+<label>الاسم الكامل:</label>
+<input type="text" id="customerName" required placeholder="مثال: أحمد محمد البوسعيدي">
+</div>
+<div class="form-group">
+<label>رقم الهاتف:</label>
+<input type="tel" id="customerPhone" required placeholder="مثال: 96891234567">
+</div>
+<div class="form-group">
+<label>العنوان الكامل:</label>
+<textarea id="customerAddress" required placeholder="مثال: مسقط، الخوير، شارع السلطان قابوس، بناية رقم 123"></textarea>
+</div>
+<button type="submit" class="submit-btn">إرسال الطلب عبر واتساب 📱</button>
+</form>
+</div>
+</div>
+<footer style='background:#ecf0f1;color:#114c7d;text-align:center;padding:20px;margin-top:40px;'>
+<small>جميع الحقوق محفوظة &copy; سوق عمان 2025 | مسقط، عمان - الرمز البريدي: 112</small>
+<nav style='margin-top:10px;'>
+<a href='/terms.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشروط</a>
+<a href='/privacy.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الخصوصية</a>
+<a href='/shipping.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشحن</a>
+<a href='/returns.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الإرجاع</a>
+</nav>
+</footer>
+<script>
+function loadOrderSummary(){
+const urlParams=new URLSearchParams(window.location.search);
+const singleProduct=urlParams.get('product');
+let orderHTML='<h3 style="color:#114c7d;margin-bottom:15px;">ملخص الطلب</h3>';
+let total=0;
+if(singleProduct){
+const sku=urlParams.get('sku');
+const price=parseFloat(urlParams.get('price'));
+total=price;
+orderHTML+=`<div class="order-item"><strong>${singleProduct}</strong><br>SKU: ${sku}<br>السعر: ${price} ر.ع</div>`;
+}else{
+const cart=JSON.parse(localStorage.getItem('sooqoman-cart')||'[]');
+if(cart.length===0){
+window.location.href='/index.html';
+return;
+}
+cart.forEach(item=>{
+const price=parseFloat(item.price);
+total+=price;
+orderHTML+=`<div class="order-item"><strong>${item.title}</strong><br>SKU: ${item.sku}<br>السعر: ${item.price} ر.ع</div>`;
+});
+}
+orderHTML+=`<div class="total-row"><span>المجموع الكلي:</span><span>${total.toFixed(2)} ر.ع</span></div>`;
+document.getElementById('orderSummary').innerHTML=orderHTML;
+}
+function submitOrder(e){
+e.preventDefault();
+const name=document.getElementById('customerName').value;
+const phone=document.getElementById('customerPhone').value;
+const address=document.getElementById('customerAddress').value;
+const urlParams=new URLSearchParams(window.location.search);
+const singleProduct=urlParams.get('product');
+let message='*طلب جديد من سوق عمان*%0a%0a*بيانات العميل:*%0aالاسم: '+name+'%0aالهاتف: '+phone+'%0aالعنوان: '+address+'%0a%0a*تفاصيل الطلب:*%0a';
+let total=0;
+if(singleProduct){
+const sku=urlParams.get('sku');
+const price=urlParams.get('price');
+total=parseFloat(price);
+message+=`المنتج: ${singleProduct}%0aSKU: ${sku}%0aالسعر: ${price} ر.ع%0a`;
+}else{
+const cart=JSON.parse(localStorage.getItem('sooqoman-cart')||'[]');
+cart.forEach((item,i)=>{
+total+=parseFloat(item.price);
+message+=`${i+1}. ${item.title} - ${item.price} ر.ع (SKU: ${item.sku})%0a`;
+});
+}
+message+=`%0a*المجموع الكلي: ${total.toFixed(2)} ر.ع*%0a*الشحن: مجاني*`;
+window.location.href='https://wa.me/201110760081?text='+message;
+if(!singleProduct){
+setTimeout(()=>{
+if(confirm('هل تريد تفريغ السلة؟')){
+localStorage.removeItem('sooqoman-cart');
+window.location.href='/index.html';
+}
+},2000);
+}
+}
+window.onload=loadOrderSummary;
+</script>
+</body>
+</html>

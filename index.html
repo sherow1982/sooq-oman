@@ -1,830 +1,651 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سوق عمان - متجر إلكتروني عماني | منتجات أصلية بأسعار مميزة</title>
-    <meta name="description" content="تسوق من سوق عمان أفضل المنتجات العمانية الأصلية بأسعار تنافسية، شحن مجاني، توصيل سريع خلال 3 أيام">
-    <meta name="keywords" content="سوق عمان، تسوق إلكتروني، منتجات عمانية، شحن مجاني، متجر عماني">
-    <meta name="author" content="سوق عمان">
-    <meta property="og:title" content="سوق عمان - متجر إلكتروني عماني">
-    <meta property="og:description" content="تسوق من سوق عمان أفضل المنتجات بأسعار مميزة">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sooq-oman.com">
-    <link rel="canonical" href="https://sooq-oman.com">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; direction: rtl; }
-        .container { max-width: 1400px; margin: 0 auto; padding: 30px 20px; }
-        h1 { text-align: center; color: #114c7d; margin-bottom: 15px; font-size: 36px; }
-        .subtitle { text-align: center; color: #666; margin-bottom: 40px; font-size: 18px; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
-        .product-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; transition: all 0.3s; position: relative; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
-        .card-image { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
-        .card-title { font-size: 18px; color: #2c3e50; margin-bottom: 12px; min-height: 48px; line-height: 1.4; }
-        .price-box { margin: 15px 0; }
-        .sale-price { color: #e74c3c; font-size: 24px; font-weight: bold; margin-left: 10px; }
-        .original-price { text-decoration: line-through; color: #999; font-size: 16px; }
-        .btn-details { display: block; background: #114c7d; color: white; text-align: center; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: background 0.3s; }
-        .btn-details:hover { background: #08304c; }
-        @media (max-width: 768px) {
-            .products-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
-            .card-image { height: 180px; }
-            .card-title { font-size: 15px; min-height: 40px; }
-            .sale-price { font-size: 20px; }
-            h1 { font-size: 28px; }
-        }
-    </style>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Store",
-        "name": "سوق عمان",
-        "description": "متجر إلكتروني عماني يوفر منتجات أصلية بأسعار تنافسية",
-        "url": "https://sooq-oman.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "OM",
-            "addressLocality": "مسقط",
-            "postalCode": "112"
-        },
-        "email": "sooqoman6@gmail.com"
-    }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سوق عمان - متجر إلكتروني عماني</title>
+<meta name="description" content="تسوق من سوق عمان أفضل المنتجات العمانية بأسعار تنافسية، شحن مجاني">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#f5f5f5;direction:rtl;}
+.container{max-width:1400px;margin:0 auto;padding:30px 20px;}
+h1{text-align:center;color:#114c7d;margin-bottom:15px;font-size:36px;}
+.subtitle{text-align:center;color:#666;margin-bottom:40px;font-size:18px;}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:25px;}
+.product-card{background:white;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.08);cursor:pointer;transition:all 0.3s;}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 6px 20px rgba(0,0,0,0.15);}
+.card-image{width:100%;height:250px;object-fit:cover;border-radius:8px;margin-bottom:15px;}
+.card-title{font-size:18px;color:#2c3e50;margin-bottom:12px;min-height:48px;line-height:1.4;}
+.price-box{margin:15px 0;}
+.sale-price{color:#e74c3c;font-size:24px;font-weight:bold;margin-left:10px;}
+.original-price{text-decoration:line-through;color:#999;font-size:16px;}
+.btn-details{display:block;background:#114c7d;color:white;text-align:center;padding:12px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:15px;transition:background 0.3s;}
+.btn-details:hover{background:#08304c;}
+@media (max-width:768px){.products-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:15px;}.card-image{height:180px;}.card-title{font-size:15px;min-height:40px;}.sale-price{font-size:20px;}h1{font-size:28px;}}
+</style>
 </head>
 <body>
 <header style='background:#114c7d;padding:20px;color:white;font-weight:bold;font-size:22px;text-align:center;'>
 <nav>
 <a href='/index.html' style='color:#fff;margin:0 15px;text-decoration:none;font-size:18px;'>الرئيسية</a>
-<a href='/terms.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشروط والأحكام</a>
-<a href='/privacy.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الخصوصية</a>
-<a href='/shipping.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الشحن</a>
-<a href='/returns.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الإرجاع</a>
+<a href='/cart.html' style='color:#fff;margin:0 15px;text-decoration:none;'>السلة 🛒</a>
+<a href='/terms.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشروط</a>
+<a href='/privacy.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الخصوصية</a>
+<a href='/shipping.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشحن</a>
 <a href='/contact.html' style='color:#fff;margin:0 15px;text-decoration:none;'>اتصل بنا</a>
 </nav>
 </header>
 <div class="container">
-    <h1>سوق عمان - متجر إلكتروني عماني</h1>
-    <p class="subtitle">منتجات أصلية | شحن مجاني | توصيل سريع خلال 3 أيام</p>
-    <div class="products-grid">
-        
-    <div class="product-card" onclick="window.location.href='/products-pages/قطاعة-الخضار-اليدوية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatCZ76KDh6.jpg?alt=media&token=198ae048-c196-4cb5-8b93-25951aca3f16" alt="قطاعة الخضار اليدوية" class="card-image" loading="lazy">
-        <h3 class="card-title">قطاعة الخضار اليدوية</h3>
-        <div class="price-box">
-            <span class="sale-price">20 ر.ع</span>
-            <span class="original-price">25 ر.ع</span>
-        </div>
-        <a href="/products-pages/قطاعة-الخضار-اليدوية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حقيبة-كتف-بحمالة-رياضية-للشحن-ضد-السرقة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatDYZ0ahRZ.jpg?alt=media&token=220cac33-c50a-4621-973e-b02e6c72a692" alt="حقيبة كتف بحمالة رياضية للشحن ضد السرقة" class="card-image" loading="lazy">
-        <h3 class="card-title">حقيبة كتف بحمالة رياضية للشحن ضد السرقة</h3>
-        <div class="price-box">
-            <span class="sale-price">22.8 ر.ع</span>
-            <span class="original-price">27.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/حقيبة-كتف-بحمالة-رياضية-للشحن-ضد-السرقة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/ماكينة-حلاقة-كهربائية-صغيرة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatENn6gxiK.jpg?alt=media&token=7e998443-c4a9-4e27-b192-468bcf30ed4a" alt="ماكينة حلاقة كهربائية صغيرة" class="card-image" loading="lazy">
-        <h3 class="card-title">ماكينة حلاقة كهربائية صغيرة</h3>
-        <div class="price-box">
-            <span class="sale-price">20 ر.ع</span>
-            <span class="original-price">25 ر.ع</span>
-        </div>
-        <a href="/products-pages/ماكينة-حلاقة-كهربائية-صغيرة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-مساج-القدمين.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatmBgYRYpQ.jpeg?alt=media&token=57c59dc6-2588-4212-98c9-e7a5e6c97872" alt="جهاز مساج القدمين" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز مساج القدمين</h3>
-        <div class="price-box">
-            <span class="sale-price">19.9 ر.ع</span>
-            <span class="original-price">24.9 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-مساج-القدمين.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مكيف-هوائي-محمول.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatfcL5SLTQ.jpeg?alt=media&token=4086f151-b5b2-4e48-a0f9-2835d83174b8" alt="مكيف هوائي محمول" class="card-image" loading="lazy">
-        <h3 class="card-title">مكيف هوائي محمول</h3>
-        <div class="price-box">
-            <span class="sale-price">25.2 ر.ع</span>
-            <span class="original-price">30.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/مكيف-هوائي-محمول.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مكيف-الهواء-المتنقل.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat0UaeHaUD.jpg?alt=media&token=63895bf9-0223-4d2f-bcc7-62b14e5c6030" alt="مكيف الهواء المتنقل" class="card-image" loading="lazy">
-        <h3 class="card-title">مكيف الهواء المتنقل</h3>
-        <div class="price-box">
-            <span class="sale-price">25 ر.ع</span>
-            <span class="original-price">30 ر.ع</span>
-        </div>
-        <a href="/products-pages/مكيف-الهواء-المتنقل.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/سائل-إصلاح-الزجاج-الأمامي-للسيارات.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatdZa5iUhi.webp?alt=media&token=118f1451-678d-4d2f-96e6-148b55f379c4" alt="سائل إصلاح الزجاج الأمامي للسيارات" class="card-image" loading="lazy">
-        <h3 class="card-title">سائل إصلاح الزجاج الأمامي للسيارات</h3>
-        <div class="price-box">
-            <span class="sale-price">19.3 ر.ع</span>
-            <span class="original-price">24.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/سائل-إصلاح-الزجاج-الأمامي-للسيارات.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حلقة-هولا-هوب-لتنحيف-الخصر.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaath4B7PEq8.jpg?alt=media&token=a6b5cfd4-ca94-4e67-9cae-649b65ba21fb" alt="حلقة هولا هوب لتنحيف الخصر" class="card-image" loading="lazy">
-        <h3 class="card-title">حلقة هولا هوب لتنحيف الخصر</h3>
-        <div class="price-box">
-            <span class="sale-price">21.8 ر.ع</span>
-            <span class="original-price">26.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/حلقة-هولا-هوب-لتنحيف-الخصر.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جل-تبييض-الأسنان-EELHOE.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFezzopz2.jfif?alt=media&token=5a1513c8-671c-4f07-8d4e-4d897577778e" alt="جل تبييض الأسنان EELHOE" class="card-image" loading="lazy">
-        <h3 class="card-title">جل تبييض الأسنان EELHOE</h3>
-        <div class="price-box">
-            <span class="sale-price">20.2 ر.ع</span>
-            <span class="original-price">25.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/جل-تبييض-الأسنان-EELHOE.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-مساج-وتدليك-الجسم-الطبي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatUZGPaHxq.jpeg?alt=media&token=85822074-1a99-42c1-a3d1-377ba1969c91" alt="جهاز مساج وتدليك الجسم الطبي" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز مساج وتدليك الجسم الطبي</h3>
-        <div class="price-box">
-            <span class="sale-price">22.5 ر.ع</span>
-            <span class="original-price">27.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-مساج-وتدليك-الجسم-الطبي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/وسادة-متعددة-الوظائف.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatsgiPJ3rq.jpg?alt=media&token=4bcfaf02-e4f2-46ba-88f2-d12d3cfb299c" alt="وسادة متعددة الوظائف" class="card-image" loading="lazy">
-        <h3 class="card-title">وسادة متعددة الوظائف</h3>
-        <div class="price-box">
-            <span class="sale-price">24.5 ر.ع</span>
-            <span class="original-price">29.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/وسادة-متعددة-الوظائف.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/المشد-الرجالي-لإظهار-العضلات.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKHSg2ivl.jpg?alt=media&token=5d8e3a9d-f4fd-4bf2-a2ba-40c40f4b435e" alt="المشد الرجالي لإظهار العضلات" class="card-image" loading="lazy">
-        <h3 class="card-title">المشد الرجالي لإظهار العضلات</h3>
-        <div class="price-box">
-            <span class="sale-price">20.8 ر.ع</span>
-            <span class="original-price">25.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/المشد-الرجالي-لإظهار-العضلات.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مروحة-عنق-صغيرة-يو-اس-بي-بدون-شفرات.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatJxdOocIz.png?alt=media&token=8a013bc9-1988-4577-b20a-ebce717293f9" alt="مروحة عنق صغيرة يو اس بي بدون شفرات" class="card-image" loading="lazy">
-        <h3 class="card-title">مروحة عنق صغيرة يو اس بي بدون شفرات</h3>
-        <div class="price-box">
-            <span class="sale-price">21.5 ر.ع</span>
-            <span class="original-price">26.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/مروحة-عنق-صغيرة-يو-اس-بي-بدون-شفرات.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/قاتل-البعوض-عن-طريق-الشفط-الضوئي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatwQsdYRFQ.jpg?alt=media&token=ccc6c8f8-20aa-42bb-8b7f-531891b8931d" alt="قاتل البعوض عن طريق الشفط الضوئي" class="card-image" loading="lazy">
-        <h3 class="card-title">قاتل البعوض عن طريق الشفط الضوئي</h3>
-        <div class="price-box">
-            <span class="sale-price">19.9 ر.ع</span>
-            <span class="original-price">24.9 ر.ع</span>
-        </div>
-        <a href="/products-pages/قاتل-البعوض-عن-طريق-الشفط-الضوئي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/اداة-سحب-الهواء.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatPTfmnJXr.jpg?alt=media&token=517f0df9-725c-4cd0-b309-d956745c50f7" alt="اداة سحب الهواء" class="card-image" loading="lazy">
-        <h3 class="card-title">اداة سحب الهواء</h3>
-        <div class="price-box">
-            <span class="sale-price">21.2 ر.ع</span>
-            <span class="original-price">26.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/اداة-سحب-الهواء.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-إغلاق-أكياس-الطعام-بإحكام.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1kiNs2Hz.jpg?alt=media&token=83ca0667-a63b-4b8c-9221-387233ad0f51" alt="جهاز إغلاق أكياس الطعام بإحكام" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز إغلاق أكياس الطعام بإحكام</h3>
-        <div class="price-box">
-            <span class="sale-price">40.8 ر.ع</span>
-            <span class="original-price">45.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-إغلاق-أكياس-الطعام-بإحكام.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/بلوز-نسائية-لشد-الجسم.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQ55nIv7c.jpg?alt=media&token=5f0fe65b-fd96-4277-92a9-4df40a49659c" alt="بلوز نسائية لشد الجسم" class="card-image" loading="lazy">
-        <h3 class="card-title">بلوز نسائية لشد الجسم</h3>
-        <div class="price-box">
-            <span class="sale-price">23.7 ر.ع</span>
-            <span class="original-price">28.7 ر.ع</span>
-        </div>
-        <a href="/products-pages/بلوز-نسائية-لشد-الجسم.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مبخرة-اللؤلؤ-إلاكترونية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatWiuIanl3.jpg?alt=media&token=328e5ebe-6487-4dfe-a1c1-5c1c9ef59436" alt="مبخرة اللؤلؤ إلاكترونية" class="card-image" loading="lazy">
-        <h3 class="card-title">مبخرة اللؤلؤ إلاكترونية</h3>
-        <div class="price-box">
-            <span class="sale-price">23 ر.ع</span>
-            <span class="original-price">28 ر.ع</span>
-        </div>
-        <a href="/products-pages/مبخرة-اللؤلؤ-إلاكترونية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مظلة-واقية-من-الشمس-للزجاج-الأمامي-للسيارة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaaterkomipk.jpg?alt=media&token=bc56fcf9-6082-4942-b145-4eec4337cb0c" alt="مظلة واقية من الشمس للزجاج الأمامي للسيارة" class="card-image" loading="lazy">
-        <h3 class="card-title">مظلة واقية من الشمس للزجاج الأمامي للسيارة</h3>
-        <div class="price-box">
-            <span class="sale-price">16.1 ر.ع</span>
-            <span class="original-price">21.1 ر.ع</span>
-        </div>
-        <a href="/products-pages/مظلة-واقية-من-الشمس-للزجاج-الأمامي-للسيارة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حزام-القطعة-الواحدة-لتنحيف-للبطن-والافخاد.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat44ByaLqr.jpg?alt=media&token=a38fd14e-f9d6-42f5-bdbd-5518fc3a42a5" alt="حزام القطعة الواحدة لتنحيف للبطن والافخاد" class="card-image" loading="lazy">
-        <h3 class="card-title">حزام القطعة الواحدة لتنحيف للبطن والافخاد</h3>
-        <div class="price-box">
-            <span class="sale-price">22.4 ر.ع</span>
-            <span class="original-price">27.4 ر.ع</span>
-        </div>
-        <a href="/products-pages/حزام-القطعة-الواحدة-لتنحيف-للبطن-والافخاد.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/فرد-نانو-المحمول-للتعقيم-بالبخار.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatICXKWYUD.jpg?alt=media&token=b26773d6-c896-4858-9ed4-f3c23065aea9" alt="فرد  نانو المحمول للتعقيم بالبخار" class="card-image" loading="lazy">
-        <h3 class="card-title">فرد  نانو المحمول للتعقيم بالبخار</h3>
-        <div class="price-box">
-            <span class="sale-price">27.6 ر.ع</span>
-            <span class="original-price">32.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/فرد-نانو-المحمول-للتعقيم-بالبخار.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-تعقيم.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1fdkH8hB.jpg?alt=media&token=f60ec3fa-d74d-4fe1-aa8c-e2807c503b9b" alt="جهاز تعقيم" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز تعقيم</h3>
-        <div class="price-box">
-            <span class="sale-price">28.3 ر.ع</span>
-            <span class="original-price">33.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-تعقيم.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-ازالة-الشامات-المنزلي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQ2AfcxGR.jfif?alt=media&token=0c9d05e2-896b-4bff-937f-0d31a31f82b8" alt="جهاز ازالة الشامات المنزلي" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز ازالة الشامات المنزلي</h3>
-        <div class="price-box">
-            <span class="sale-price">21.3 ر.ع</span>
-            <span class="original-price">26.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-ازالة-الشامات-المنزلي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-الكتروني.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6bM3peMz.jpg?alt=media&token=2632c5a0-910f-4404-8f4d-44f7abe354a8" alt="جهاز الكتروني" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز الكتروني</h3>
-        <div class="price-box">
-            <span class="sale-price">19.1 ر.ع</span>
-            <span class="original-price">24.1 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-الكتروني.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/كاميرا-مراقبة-لاسلكية-شكل-لمبة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6m0rHUuN.jpg?alt=media&token=d6a6556d-48f1-46e2-8832-596662b26df4" alt="كاميرا مراقبة لاسلكية شكل لمبة" class="card-image" loading="lazy">
-        <h3 class="card-title">كاميرا مراقبة لاسلكية شكل لمبة</h3>
-        <div class="price-box">
-            <span class="sale-price">19.5 ر.ع</span>
-            <span class="original-price">24.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/كاميرا-مراقبة-لاسلكية-شكل-لمبة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مجموعة-راس-الدش.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatMff1jBne.jpg?alt=media&token=4ea69768-e306-4d0c-9851-433be0c7916a" alt="مجموعة راس الدش" class="card-image" loading="lazy">
-        <h3 class="card-title">مجموعة راس الدش</h3>
-        <div class="price-box">
-            <span class="sale-price">19.4 ر.ع</span>
-            <span class="original-price">24.4 ر.ع</span>
-        </div>
-        <a href="/products-pages/مجموعة-راس-الدش.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/لعبة-الصبارة-للاطفال.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatafGp4Ixa.jpg?alt=media&token=fd13389c-cee5-406f-bc67-e70074c549a3" alt="لعبة الصبارة للاطفال" class="card-image" loading="lazy">
-        <h3 class="card-title">لعبة الصبارة للاطفال</h3>
-        <div class="price-box">
-            <span class="sale-price">23.2 ر.ع</span>
-            <span class="original-price">28.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/لعبة-الصبارة-للاطفال.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/ماكنة-الحلاقة-للاطفال.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat4BtVUbC3.jpg?alt=media&token=7328b502-932d-4f4f-a62a-1e98ff9bb3ac" alt="ماكنة الحلاقة للاطفال" class="card-image" loading="lazy">
-        <h3 class="card-title">ماكنة الحلاقة للاطفال</h3>
-        <div class="price-box">
-            <span class="sale-price">27.6 ر.ع</span>
-            <span class="original-price">32.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/ماكنة-الحلاقة-للاطفال.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مملس-الشعر-من-كيمي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat16lOFAhh.jpg?alt=media&token=215a9365-bdd3-46ce-9100-8b6a52739826" alt="مملس الشعر من كيمي" class="card-image" loading="lazy">
-        <h3 class="card-title">مملس الشعر من كيمي</h3>
-        <div class="price-box">
-            <span class="sale-price">21 ر.ع</span>
-            <span class="original-price">26 ر.ع</span>
-        </div>
-        <a href="/products-pages/مملس-الشعر-من-كيمي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-تمارين-عضلات-البطن-مع-دعم-منزلي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatymutNkS8.jpeg?alt=media&token=08de4f89-6d52-46f3-aad7-121d0cb81320" alt="جهاز تمارين عضلات البطن مع دعم منزلي" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز تمارين عضلات البطن مع دعم منزلي</h3>
-        <div class="price-box">
-            <span class="sale-price">19.8 ر.ع</span>
-            <span class="original-price">24.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-تمارين-عضلات-البطن-مع-دعم-منزلي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/صنبور-المياه-الاستشعار-التلقائي-الأشعة-تحت-الحمراء.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatJ5KbxEbR.jpg?alt=media&token=ae02ae42-3aa4-4302-9e4c-fb2f6898af31" alt="صنبور المياه الاستشعار التلقائي الأشعة تحت الحمراء" class="card-image" loading="lazy">
-        <h3 class="card-title">صنبور المياه الاستشعار التلقائي الأشعة تحت الحمراء</h3>
-        <div class="price-box">
-            <span class="sale-price">26.6 ر.ع</span>
-            <span class="original-price">31.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/صنبور-المياه-الاستشعار-التلقائي-الأشعة-تحت-الحمراء.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/لمبة-قابلة-للطي-تعمل-بالطاقة-الشمسية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatDmrU7bIG.crdownload?alt=media&token=48f6b7b6-fe87-495b-8b40-502ceaf66e8c" alt="لمبة قابلة للطي تعمل بالطاقة الشمسية" class="card-image" loading="lazy">
-        <h3 class="card-title">لمبة قابلة للطي تعمل بالطاقة الشمسية</h3>
-        <div class="price-box">
-            <span class="sale-price">21.8 ر.ع</span>
-            <span class="original-price">26.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/لمبة-قابلة-للطي-تعمل-بالطاقة-الشمسية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/موقد-شبكي-فولاذي-قابل-للطي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQv12FuF3.jpg?alt=media&token=b6e04c78-292e-4b0d-9ae8-497250eff301" alt="موقد شبكي فولاذي قابل للطي" class="card-image" loading="lazy">
-        <h3 class="card-title">موقد شبكي فولاذي قابل للطي</h3>
-        <div class="price-box">
-            <span class="sale-price">23.5 ر.ع</span>
-            <span class="original-price">28.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/موقد-شبكي-فولاذي-قابل-للطي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-الحجامة-الذكي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatogHffDiV.webp?alt=media&token=f3972ac6-1f02-4bff-958b-b2087d03813a" alt="جهاز الحجامة الذكي" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز الحجامة الذكي</h3>
-        <div class="price-box">
-            <span class="sale-price">22 ر.ع</span>
-            <span class="original-price">27 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-الحجامة-الذكي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مشط-لازالة-القمل.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6Zic4Bus.jpg?alt=media&token=49d1921f-da87-4ce1-9d7d-68bd9f602c27" alt="مشط لازالة القمل" class="card-image" loading="lazy">
-        <h3 class="card-title">مشط لازالة القمل</h3>
-        <div class="price-box">
-            <span class="sale-price">19.2 ر.ع</span>
-            <span class="original-price">24.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/مشط-لازالة-القمل.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/النظارات-الشمسية-مع-سماعات-بلوتوث-لاسلكية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaataWEBSFOV.jpg?alt=media&token=e8848c29-25a2-48da-90ea-8578a25695f6" alt="النظارات الشمسية مع سماعات بلوتوث لاسلكية" class="card-image" loading="lazy">
-        <h3 class="card-title">النظارات الشمسية مع سماعات بلوتوث لاسلكية</h3>
-        <div class="price-box">
-            <span class="sale-price">21 ر.ع</span>
-            <span class="original-price">26 ر.ع</span>
-        </div>
-        <a href="/products-pages/النظارات-الشمسية-مع-سماعات-بلوتوث-لاسلكية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مموج-الشعر-الاوتوماتيكي-من-سيكرت-ويف.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatARHeuYRe.jpg?alt=media&token=3d30aecb-7062-47b6-9925-a83c3de93b3c" alt="مموج الشعر الاوتوماتيكي من سيكرت ويف" class="card-image" loading="lazy">
-        <h3 class="card-title">مموج الشعر الاوتوماتيكي من سيكرت ويف</h3>
-        <div class="price-box">
-            <span class="sale-price">24.7 ر.ع</span>
-            <span class="original-price">29.7 ر.ع</span>
-        </div>
-        <a href="/products-pages/مموج-الشعر-الاوتوماتيكي-من-سيكرت-ويف.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/قلم-تصليح-يعمل-بالبلاستيك-السائل-و-الأشعة-فوق-البنفسجية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQiLXIOrT.jfif?alt=media&token=d9cba6d3-c2d4-4e33-a39f-f4e69bbd8199" alt="قلم تصليح يعمل بالبلاستيك السائل و الأشعة فوق البنفسجية" class="card-image" loading="lazy">
-        <h3 class="card-title">قلم تصليح يعمل بالبلاستيك السائل و الأشعة فوق البنفسجية</h3>
-        <div class="price-box">
-            <span class="sale-price">20.6 ر.ع</span>
-            <span class="original-price">25.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/قلم-تصليح-يعمل-بالبلاستيك-السائل-و-الأشعة-فوق-البنفسجية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/موزع-معجون-أسنان-بلاستيكي-مع-4-اكواب.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatnuLDdjVd.jpg?alt=media&token=bf3dee9e-6f71-426c-bb1e-450050fada31" alt="موزع معجون أسنان بلاستيكي مع 4 اكواب" class="card-image" loading="lazy">
-        <h3 class="card-title">موزع معجون أسنان بلاستيكي مع 4 اكواب</h3>
-        <div class="price-box">
-            <span class="sale-price">24.5 ر.ع</span>
-            <span class="original-price">29.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/موزع-معجون-أسنان-بلاستيكي-مع-4-اكواب.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/شورت-نسائي-لإخفاء-الكرش-من-سلم-لفت.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatomzyRjvC.jpg?alt=media&token=207d5d48-cdb1-490a-8762-52c1c32ee3ea" alt="شورت نسائي لإخفاء الكرش من سلم لفت" class="card-image" loading="lazy">
-        <h3 class="card-title">شورت نسائي لإخفاء الكرش من سلم لفت</h3>
-        <div class="price-box">
-            <span class="sale-price">19.8 ر.ع</span>
-            <span class="original-price">24.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/شورت-نسائي-لإخفاء-الكرش-من-سلم-لفت.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مملس-الشعر-البخاري.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatemSNzd9t.png?alt=media&token=fb3a14db-795d-4c4a-9839-2fea612e86ff" alt="مملس الشعر البخاري" class="card-image" loading="lazy">
-        <h3 class="card-title">مملس الشعر البخاري</h3>
-        <div class="price-box">
-            <span class="sale-price">29 ر.ع</span>
-            <span class="original-price">34 ر.ع</span>
-        </div>
-        <a href="/products-pages/مملس-الشعر-البخاري.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/قفازات-شواء-قابلة-للحرارة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatMiun2g1b.jpeg?alt=media&token=0b37f2c1-4714-4d4c-8126-a2491cf23e8e" alt="قفازات شواء قابلة للحرارة" class="card-image" loading="lazy">
-        <h3 class="card-title">قفازات شواء قابلة للحرارة</h3>
-        <div class="price-box">
-            <span class="sale-price">23.2 ر.ع</span>
-            <span class="original-price">28.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/قفازات-شواء-قابلة-للحرارة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/كريم-إزالة-الثآليل-من-سومفون.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat19ECTdTF.jpg?alt=media&token=4a6ec6e2-69a6-4e37-b5b3-8786496c7978" alt="كريم إزالة الثآليل من سومفون" class="card-image" loading="lazy">
-        <h3 class="card-title">كريم إزالة الثآليل من سومفون</h3>
-        <div class="price-box">
-            <span class="sale-price">14.6 ر.ع</span>
-            <span class="original-price">19.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/كريم-إزالة-الثآليل-من-سومفون.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/نظارة-القيادة-الليلية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatgsswVqZI.jpg?alt=media&token=1bb583d5-07b0-43f5-abc4-33a3ee6c52d8" alt="نظارة القيادة الليلية" class="card-image" loading="lazy">
-        <h3 class="card-title">نظارة القيادة الليلية</h3>
-        <div class="price-box">
-            <span class="sale-price">15.5 ر.ع</span>
-            <span class="original-price">20.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/نظارة-القيادة-الليلية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مكنسة-كهربائية-محمولة-3-في-1.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatxgvapQx6.jpg?alt=media&token=eb5dd8c1-80ae-4999-bff7-693777661de4" alt="مكنسة كهربائية محمولة 3 في 1" class="card-image" loading="lazy">
-        <h3 class="card-title">مكنسة كهربائية محمولة 3 في 1</h3>
-        <div class="price-box">
-            <span class="sale-price">18 ر.ع</span>
-            <span class="original-price">23 ر.ع</span>
-        </div>
-        <a href="/products-pages/مكنسة-كهربائية-محمولة-3-في-1.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حقيبة-الطفل-للسفر.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatYDxlJtwk.jpg?alt=media&token=928656c5-425f-4f96-aad9-10edb07b2160" alt="حقيبة الطفل للسفر" class="card-image" loading="lazy">
-        <h3 class="card-title">حقيبة الطفل للسفر</h3>
-        <div class="price-box">
-            <span class="sale-price">26.6 ر.ع</span>
-            <span class="original-price">31.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/حقيبة-الطفل-للسفر.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/منشفة-عمامة-للشعر.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFSFjmUf7.jpg?alt=media&token=30faca46-0d12-489d-aeee-a92d9b50dd0a" alt="منشفة عمامة للشعر" class="card-image" loading="lazy">
-        <h3 class="card-title">منشفة عمامة للشعر</h3>
-        <div class="price-box">
-            <span class="sale-price">20.9 ر.ع</span>
-            <span class="original-price">25.9 ر.ع</span>
-        </div>
-        <a href="/products-pages/منشفة-عمامة-للشعر.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مموج-الشعر-التلقائي-اللاسلكي.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGrGdh6PK.jpg?alt=media&token=e0a65f03-6477-452f-b168-85a85af241b3" alt="مموج الشعر التلقائي اللاسلكي" class="card-image" loading="lazy">
-        <h3 class="card-title">مموج الشعر التلقائي اللاسلكي</h3>
-        <div class="price-box">
-            <span class="sale-price">28.3 ر.ع</span>
-            <span class="original-price">33.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/مموج-الشعر-التلقائي-اللاسلكي.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/سروال-سباحة-متغير-اللون-للرجال.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatBOcHq3jM.jpg?alt=media&token=c737a24c-dc86-4629-8064-bf5da74da83c" alt="سروال سباحة متغير اللون للرجال" class="card-image" loading="lazy">
-        <h3 class="card-title">سروال سباحة متغير اللون للرجال</h3>
-        <div class="price-box">
-            <span class="sale-price">23.2 ر.ع</span>
-            <span class="original-price">28.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/سروال-سباحة-متغير-اللون-للرجال.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حامل-الهاتف-المحمول.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat7nVgrD8B.jpeg?alt=media&token=fdf8c373-68f5-48a4-93e4-36f85754177f" alt="حامل الهاتف المحمول" class="card-image" loading="lazy">
-        <h3 class="card-title">حامل الهاتف المحمول</h3>
-        <div class="price-box">
-            <span class="sale-price">24.6 ر.ع</span>
-            <span class="original-price">29.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/حامل-الهاتف-المحمول.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/إضاءة-مكياج-احترافية-لاسلكية-من-ستوديو-جلو.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGZIn9S3S.jpg?alt=media&token=bad0e62f-0c10-4d42-a9d3-d399d4f09121" alt="إضاءة مكياج احترافية لاسلكية من ستوديو جلو" class="card-image" loading="lazy">
-        <h3 class="card-title">إضاءة مكياج احترافية لاسلكية من ستوديو جلو</h3>
-        <div class="price-box">
-            <span class="sale-price">19.3 ر.ع</span>
-            <span class="original-price">24.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/إضاءة-مكياج-احترافية-لاسلكية-من-ستوديو-جلو.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مشد-سويت-شيبر-لتنحيف-البطن.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaathhE92nu7.png?alt=media&token=4b37e587-ce99-4f95-b342-81059233292a" alt="مشد  سويت شيبر لتنحيف البطن" class="card-image" loading="lazy">
-        <h3 class="card-title">مشد  سويت شيبر لتنحيف البطن</h3>
-        <div class="price-box">
-            <span class="sale-price">22 ر.ع</span>
-            <span class="original-price">27 ر.ع</span>
-        </div>
-        <a href="/products-pages/مشد-سويت-شيبر-لتنحيف-البطن.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/ماكنة-الحلاقة-الرجالية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKhrVmJUx.jpg?alt=media&token=db577dc3-6a76-428c-98ce-5eae13aab806" alt="ماكنة الحلاقة الرجالية" class="card-image" loading="lazy">
-        <h3 class="card-title">ماكنة الحلاقة الرجالية</h3>
-        <div class="price-box">
-            <span class="sale-price">19.2 ر.ع</span>
-            <span class="original-price">24.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/ماكنة-الحلاقة-الرجالية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/كاميرا-تصوير-للسيارة-امامية-وخلفية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGclZQvLo.jpg?alt=media&token=00b92f8a-1298-4dab-b1c9-1041dd9ec9ef" alt="كاميرا تصوير للسيارة امامية وخلفية" class="card-image" loading="lazy">
-        <h3 class="card-title">كاميرا تصوير للسيارة امامية وخلفية</h3>
-        <div class="price-box">
-            <span class="sale-price">25.1 ر.ع</span>
-            <span class="original-price">30.1 ر.ع</span>
-        </div>
-        <a href="/products-pages/كاميرا-تصوير-للسيارة-امامية-وخلفية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/نظارة-الرؤية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatL3beMJ3P.jpg?alt=media&token=d606177e-fa73-40f5-be6e-c0fe38c0b227" alt="نظارة الرؤية" class="card-image" loading="lazy">
-        <h3 class="card-title">نظارة الرؤية</h3>
-        <div class="price-box">
-            <span class="sale-price">19.2 ر.ع</span>
-            <span class="original-price">24.2 ر.ع</span>
-        </div>
-        <a href="/products-pages/نظارة-الرؤية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/ستائر-نافذة-السيارة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat57oQCOOv.jpg?alt=media&token=5dc35a3d-3f65-4143-969d-33b9f97806df" alt="ستائر نافذة السيارة" class="card-image" loading="lazy">
-        <h3 class="card-title">ستائر نافذة السيارة</h3>
-        <div class="price-box">
-            <span class="sale-price">23.7 ر.ع</span>
-            <span class="original-price">28.7 ر.ع</span>
-        </div>
-        <a href="/products-pages/ستائر-نافذة-السيارة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/أداة-ميكرو-تاتش-سولو-لإزالة-كامل-شعر-الجسم-A.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat7JxvKiu0.jpg?alt=media&token=1f049350-215d-45f5-9653-70119fdc96e1" alt="أداة ميكرو تاتش سولو لإزالة كامل شعر الجسم A." class="card-image" loading="lazy">
-        <h3 class="card-title">أداة ميكرو تاتش سولو لإزالة كامل شعر الجسم A.</h3>
-        <div class="price-box">
-            <span class="sale-price">19.1 ر.ع</span>
-            <span class="original-price">24.1 ر.ع</span>
-        </div>
-        <a href="/products-pages/أداة-ميكرو-تاتش-سولو-لإزالة-كامل-شعر-الجسم-A.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-التراسونيك-لازالة-الزيون-والرؤوس-السوداء.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatjbHccluG.jpg?alt=media&token=9866fe95-4903-4745-a08a-a5d20332d03c" alt="جهاز التراسونيك لازالة الزيون والرؤوس السوداء" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز التراسونيك لازالة الزيون والرؤوس السوداء</h3>
-        <div class="price-box">
-            <span class="sale-price">22.3 ر.ع</span>
-            <span class="original-price">27.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-التراسونيك-لازالة-الزيون-والرؤوس-السوداء.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-ريفوفليكس-للتمارين-الرياضية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKiNjrD8C.jpg?alt=media&token=0b04f00c-3a12-4ed6-a6fe-e745bdef552b" alt="جهاز ريفوفليكس للتمارين الرياضية" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز ريفوفليكس للتمارين الرياضية</h3>
-        <div class="price-box">
-            <span class="sale-price">22.3 ر.ع</span>
-            <span class="original-price">27.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-ريفوفليكس-للتمارين-الرياضية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حزام-شد-البطن.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFDZAbmvN.jpg?alt=media&token=0cd157ba-187c-4baf-8cbe-ed38e814d2e5" alt="حزام شد البطن" class="card-image" loading="lazy">
-        <h3 class="card-title">حزام شد البطن</h3>
-        <div class="price-box">
-            <span class="sale-price">23.6 ر.ع</span>
-            <span class="original-price">28.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/حزام-شد-البطن.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/قطاعة-خضروات-متعددة-الوظائف-5-في-1.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1MgF0Uy8.png?alt=media&token=27ae5ca6-d284-4443-a899-368751d06913" alt="قطاعة خضروات متعددة الوظائف 5 في 1" class="card-image" loading="lazy">
-        <h3 class="card-title">قطاعة خضروات متعددة الوظائف 5 في 1</h3>
-        <div class="price-box">
-            <span class="sale-price">24 ر.ع</span>
-            <span class="original-price">29 ر.ع</span>
-        </div>
-        <a href="/products-pages/قطاعة-خضروات-متعددة-الوظائف-5-في-1.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/جهاز-لشفط-و-إزالة-الرؤوس-السوداء.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatRb9HMnpS.jpg?alt=media&token=6708d532-2cac-4f62-bf8d-0fffad5a01f7" alt="جهاز لشفط و إزالة الرؤوس السوداء" class="card-image" loading="lazy">
-        <h3 class="card-title">جهاز لشفط و إزالة الرؤوس السوداء</h3>
-        <div class="price-box">
-            <span class="sale-price">20.9 ر.ع</span>
-            <span class="original-price">25.9 ر.ع</span>
-        </div>
-        <a href="/products-pages/جهاز-لشفط-و-إزالة-الرؤوس-السوداء.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/لصقات-علاج-آلام-الركبة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatfoMWkS9B.jpg?alt=media&token=18900ce0-082c-4159-a96c-b11a057b0084" alt="لصقات علاج آلام الركبة" class="card-image" loading="lazy">
-        <h3 class="card-title">لصقات علاج آلام الركبة</h3>
-        <div class="price-box">
-            <span class="sale-price">19.8 ر.ع</span>
-            <span class="original-price">24.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/لصقات-علاج-آلام-الركبة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/لاصق-مقاوم-للماء-لإصلاح-التشققات-و-التسربات.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatCl8LYlGn.jpg?alt=media&token=9e8baf58-aa96-4600-a34c-60b88f91ba5d" alt="لاصق مقاوم للماء لإصلاح التشققات و التسربات" class="card-image" loading="lazy">
-        <h3 class="card-title">لاصق مقاوم للماء لإصلاح التشققات و التسربات</h3>
-        <div class="price-box">
-            <span class="sale-price">18.5 ر.ع</span>
-            <span class="original-price">23.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/لاصق-مقاوم-للماء-لإصلاح-التشققات-و-التسربات.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/معقم-فرشاة-الأسنان-الذكي-متعدد-الوظائف.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatAjq39NOh.jpg?alt=media&token=5d675629-110f-4908-b73e-93a774a22e65" alt="معقم فرشاة الأسنان الذكي متعدد الوظائف" class="card-image" loading="lazy">
-        <h3 class="card-title">معقم فرشاة الأسنان الذكي متعدد الوظائف</h3>
-        <div class="price-box">
-            <span class="sale-price">20 ر.ع</span>
-            <span class="original-price">25 ر.ع</span>
-        </div>
-        <a href="/products-pages/معقم-فرشاة-الأسنان-الذكي-متعدد-الوظائف.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مغطس-و-جهاز-مساج-للقدمين.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaatf0WF7awn.jpg?alt=media&token=4f7b8a35-f164-45e5-a5c5-1be69b97553f" alt="مغطس و جهاز مساج للقدمين" class="card-image" loading="lazy">
-        <h3 class="card-title">مغطس و جهاز مساج للقدمين</h3>
-        <div class="price-box">
-            <span class="sale-price">28.6 ر.ع</span>
-            <span class="original-price">33.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/مغطس-و-جهاز-مساج-للقدمين.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/سرير-قابل-للنفخ-للسيارة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatzIOHqJ1s.jpeg?alt=media&token=49804203-a589-44bf-9215-ebb3b27bbf7a" alt="سرير قابل للنفخ للسيارة" class="card-image" loading="lazy">
-        <h3 class="card-title">سرير قابل للنفخ للسيارة</h3>
-        <div class="price-box">
-            <span class="sale-price">26.8 ر.ع</span>
-            <span class="original-price">31.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/سرير-قابل-للنفخ-للسيارة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/كريم-الكولاجين-لعلاج-الشعر-التالف.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatTqLk0OnX.jpg?alt=media&token=f2b5dfa4-a38d-40df-87ea-ae72451a5903" alt="كريم الكولاجين لعلاج الشعر التالف" class="card-image" loading="lazy">
-        <h3 class="card-title">كريم الكولاجين لعلاج الشعر التالف</h3>
-        <div class="price-box">
-            <span class="sale-price">23.5 ر.ع</span>
-            <span class="original-price">28.5 ر.ع</span>
-        </div>
-        <a href="/products-pages/كريم-الكولاجين-لعلاج-الشعر-التالف.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حزام-نحت-البطن-و-الخصر-من-سويت.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatolceXA50.jpg?alt=media&token=7b91d683-3223-453e-b042-be639dc09a59" alt="حزام نحت البطن و الخصر من سويت" class="card-image" loading="lazy">
-        <h3 class="card-title">حزام نحت البطن و الخصر من سويت</h3>
-        <div class="price-box">
-            <span class="sale-price">20.4 ر.ع</span>
-            <span class="original-price">25.4 ر.ع</span>
-        </div>
-        <a href="/products-pages/حزام-نحت-البطن-و-الخصر-من-سويت.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/قطاعة-اللحوم-الكهربائية-الأوتوماتيكية.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat3xXHBn9e.jpg?alt=media&token=0ec8a640-d869-4f0e-a48e-b232a7f84b63" alt="قطاعة اللحوم الكهربائية الأوتوماتيكية" class="card-image" loading="lazy">
-        <h3 class="card-title">قطاعة اللحوم الكهربائية الأوتوماتيكية</h3>
-        <div class="price-box">
-            <span class="sale-price">20.8 ر.ع</span>
-            <span class="original-price">25.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/قطاعة-اللحوم-الكهربائية-الأوتوماتيكية.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/مسن-سكاكين-كهربائي-2-عين.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaathIBn6AdS.jpg?alt=media&token=b2c45bdd-b001-4093-a9a1-ed0f0d36669b" alt="مسن سكاكين كهربائي 2 عين" class="card-image" loading="lazy">
-        <h3 class="card-title">مسن سكاكين كهربائي 2 عين</h3>
-        <div class="price-box">
-            <span class="sale-price">24.6 ر.ع</span>
-            <span class="original-price">29.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/مسن-سكاكين-كهربائي-2-عين.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/شامبو-الشعر-بالزنجبيل-الاسود.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatpwbQLFkE.jpg?alt=media&token=37fbeb98-3e11-49c5-9e05-5f0e79a24d89" alt="شامبو الشعر بالزنجبيل الاسود" class="card-image" loading="lazy">
-        <h3 class="card-title">شامبو الشعر بالزنجبيل الاسود</h3>
-        <div class="price-box">
-            <span class="sale-price">20.3 ر.ع</span>
-            <span class="original-price">25.3 ر.ع</span>
-        </div>
-        <a href="/products-pages/شامبو-الشعر-بالزنجبيل-الاسود.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/قلم-الترجمة-عالي-الدقة.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatLeh4Jz78.jpg?alt=media&token=724e6a90-d790-476d-ae41-dd9e7ba179b7" alt="قلم الترجمة عالي الدقة" class="card-image" loading="lazy">
-        <h3 class="card-title">قلم الترجمة عالي الدقة</h3>
-        <div class="price-box">
-            <span class="sale-price">37.7 ر.ع</span>
-            <span class="original-price">42.7 ر.ع</span>
-        </div>
-        <a href="/products-pages/قلم-الترجمة-عالي-الدقة.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/نعل-سيليكوني-لزيادة-الطول.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKzJnA6VY.jpeg?alt=media&token=6af3a0e3-dc07-4e6e-abed-df1020c96be5" alt="نعل سيليكوني لزيادة الطول" class="card-image" loading="lazy">
-        <h3 class="card-title">نعل سيليكوني لزيادة الطول</h3>
-        <div class="price-box">
-            <span class="sale-price">18.6 ر.ع</span>
-            <span class="original-price">23.6 ر.ع</span>
-        </div>
-        <a href="/products-pages/نعل-سيليكوني-لزيادة-الطول.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    <div class="product-card" onclick="window.location.href='/products-pages/حزام-لدعم-وتقويم-الظهر.html'">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatNXP6CmUh.webp?alt=media&token=5c18ef24-7878-4013-aafb-8e914e621226" alt="حزام لدعم وتقويم الظهر" class="card-image" loading="lazy">
-        <h3 class="card-title">حزام لدعم وتقويم الظهر</h3>
-        <div class="price-box">
-            <span class="sale-price">12.8 ر.ع</span>
-            <span class="original-price">17.8 ر.ع</span>
-        </div>
-        <a href="/products-pages/حزام-لدعم-وتقويم-الظهر.html" class="btn-details">شاهد التفاصيل</a>
-    </div>
-    
-    </div>
+<h1>سوق عمان - متجر إلكتروني عماني</h1>
+<p class="subtitle">منتجات أصلية | شحن مجاني | توصيل سريع خلال 3 أيام</p>
+<div class="products-grid">
+<div class="product-card" onclick="window.location.href='/products-pages/قطاعة-الخضار-اليدوية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatCZ76KDh6.jpg?alt=media&token=198ae048-c196-4cb5-8b93-25951aca3f16" alt="قطاعة الخضار اليدوية" class="card-image" loading="lazy">
+<h3 class="card-title">قطاعة الخضار اليدوية</h3>
+<div class="price-box">
+<span class="sale-price">20 ر.ع</span>
+<span class="original-price">25 ر.ع</span>
+</div>
+<a href="/products-pages/قطاعة-الخضار-اليدوية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حقيبة-كتف-بحمالة-رياضية-للشحن-ضد-السرقة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatDYZ0ahRZ.jpg?alt=media&token=220cac33-c50a-4621-973e-b02e6c72a692" alt="حقيبة كتف بحمالة رياضية للشحن ضد السرقة" class="card-image" loading="lazy">
+<h3 class="card-title">حقيبة كتف بحمالة رياضية للشحن ضد السرقة</h3>
+<div class="price-box">
+<span class="sale-price">22.8 ر.ع</span>
+<span class="original-price">27.8 ر.ع</span>
+</div>
+<a href="/products-pages/حقيبة-كتف-بحمالة-رياضية-للشحن-ضد-السرقة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/ماكينة-حلاقة-كهربائية-صغيرة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatENn6gxiK.jpg?alt=media&token=7e998443-c4a9-4e27-b192-468bcf30ed4a" alt="ماكينة حلاقة كهربائية صغيرة" class="card-image" loading="lazy">
+<h3 class="card-title">ماكينة حلاقة كهربائية صغيرة</h3>
+<div class="price-box">
+<span class="sale-price">20 ر.ع</span>
+<span class="original-price">25 ر.ع</span>
+</div>
+<a href="/products-pages/ماكينة-حلاقة-كهربائية-صغيرة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-مساج-القدمين.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatmBgYRYpQ.jpeg?alt=media&token=57c59dc6-2588-4212-98c9-e7a5e6c97872" alt="جهاز مساج القدمين" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز مساج القدمين</h3>
+<div class="price-box">
+<span class="sale-price">19.9 ر.ع</span>
+<span class="original-price">24.9 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-مساج-القدمين.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مكيف-هوائي-محمول.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatfcL5SLTQ.jpeg?alt=media&token=4086f151-b5b2-4e48-a0f9-2835d83174b8" alt="مكيف هوائي محمول" class="card-image" loading="lazy">
+<h3 class="card-title">مكيف هوائي محمول</h3>
+<div class="price-box">
+<span class="sale-price">25.2 ر.ع</span>
+<span class="original-price">30.2 ر.ع</span>
+</div>
+<a href="/products-pages/مكيف-هوائي-محمول.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مكيف-الهواء-المتنقل.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat0UaeHaUD.jpg?alt=media&token=63895bf9-0223-4d2f-bcc7-62b14e5c6030" alt="مكيف الهواء المتنقل" class="card-image" loading="lazy">
+<h3 class="card-title">مكيف الهواء المتنقل</h3>
+<div class="price-box">
+<span class="sale-price">25 ر.ع</span>
+<span class="original-price">30 ر.ع</span>
+</div>
+<a href="/products-pages/مكيف-الهواء-المتنقل.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/سائل-إصلاح-الزجاج-الأمامي-للسيارات.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatdZa5iUhi.webp?alt=media&token=118f1451-678d-4d2f-96e6-148b55f379c4" alt="سائل إصلاح الزجاج الأمامي للسيارات" class="card-image" loading="lazy">
+<h3 class="card-title">سائل إصلاح الزجاج الأمامي للسيارات</h3>
+<div class="price-box">
+<span class="sale-price">19.3 ر.ع</span>
+<span class="original-price">24.3 ر.ع</span>
+</div>
+<a href="/products-pages/سائل-إصلاح-الزجاج-الأمامي-للسيارات.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حلقة-هولا-هوب-لتنحيف-الخصر.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaath4B7PEq8.jpg?alt=media&token=a6b5cfd4-ca94-4e67-9cae-649b65ba21fb" alt="حلقة هولا هوب لتنحيف الخصر" class="card-image" loading="lazy">
+<h3 class="card-title">حلقة هولا هوب لتنحيف الخصر</h3>
+<div class="price-box">
+<span class="sale-price">21.8 ر.ع</span>
+<span class="original-price">26.8 ر.ع</span>
+</div>
+<a href="/products-pages/حلقة-هولا-هوب-لتنحيف-الخصر.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جل-تبييض-الأسنان-EELHOE.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFezzopz2.jfif?alt=media&token=5a1513c8-671c-4f07-8d4e-4d897577778e" alt="جل تبييض الأسنان EELHOE" class="card-image" loading="lazy">
+<h3 class="card-title">جل تبييض الأسنان EELHOE</h3>
+<div class="price-box">
+<span class="sale-price">20.2 ر.ع</span>
+<span class="original-price">25.2 ر.ع</span>
+</div>
+<a href="/products-pages/جل-تبييض-الأسنان-EELHOE.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-مساج-وتدليك-الجسم-الطبي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatUZGPaHxq.jpeg?alt=media&token=85822074-1a99-42c1-a3d1-377ba1969c91" alt="جهاز مساج وتدليك الجسم الطبي" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز مساج وتدليك الجسم الطبي</h3>
+<div class="price-box">
+<span class="sale-price">22.5 ر.ع</span>
+<span class="original-price">27.5 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-مساج-وتدليك-الجسم-الطبي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/وسادة-متعددة-الوظائف.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatsgiPJ3rq.jpg?alt=media&token=4bcfaf02-e4f2-46ba-88f2-d12d3cfb299c" alt="وسادة متعددة الوظائف" class="card-image" loading="lazy">
+<h3 class="card-title">وسادة متعددة الوظائف</h3>
+<div class="price-box">
+<span class="sale-price">24.5 ر.ع</span>
+<span class="original-price">29.5 ر.ع</span>
+</div>
+<a href="/products-pages/وسادة-متعددة-الوظائف.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/المشد-الرجالي-لإظهار-العضلات.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKHSg2ivl.jpg?alt=media&token=5d8e3a9d-f4fd-4bf2-a2ba-40c40f4b435e" alt="المشد الرجالي لإظهار العضلات" class="card-image" loading="lazy">
+<h3 class="card-title">المشد الرجالي لإظهار العضلات</h3>
+<div class="price-box">
+<span class="sale-price">20.8 ر.ع</span>
+<span class="original-price">25.8 ر.ع</span>
+</div>
+<a href="/products-pages/المشد-الرجالي-لإظهار-العضلات.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مروحة-عنق-صغيرة-يو-اس-بي-بدون-شفرات.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatJxdOocIz.png?alt=media&token=8a013bc9-1988-4577-b20a-ebce717293f9" alt="مروحة عنق صغيرة يو اس بي بدون شفرات" class="card-image" loading="lazy">
+<h3 class="card-title">مروحة عنق صغيرة يو اس بي بدون شفرات</h3>
+<div class="price-box">
+<span class="sale-price">21.5 ر.ع</span>
+<span class="original-price">26.5 ر.ع</span>
+</div>
+<a href="/products-pages/مروحة-عنق-صغيرة-يو-اس-بي-بدون-شفرات.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/قاتل-البعوض-عن-طريق-الشفط-الضوئي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatwQsdYRFQ.jpg?alt=media&token=ccc6c8f8-20aa-42bb-8b7f-531891b8931d" alt="قاتل البعوض عن طريق الشفط الضوئي" class="card-image" loading="lazy">
+<h3 class="card-title">قاتل البعوض عن طريق الشفط الضوئي</h3>
+<div class="price-box">
+<span class="sale-price">19.9 ر.ع</span>
+<span class="original-price">24.9 ر.ع</span>
+</div>
+<a href="/products-pages/قاتل-البعوض-عن-طريق-الشفط-الضوئي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/اداة-سحب-الهواء.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatPTfmnJXr.jpg?alt=media&token=517f0df9-725c-4cd0-b309-d956745c50f7" alt="اداة سحب الهواء" class="card-image" loading="lazy">
+<h3 class="card-title">اداة سحب الهواء</h3>
+<div class="price-box">
+<span class="sale-price">21.2 ر.ع</span>
+<span class="original-price">26.2 ر.ع</span>
+</div>
+<a href="/products-pages/اداة-سحب-الهواء.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-إغلاق-أكياس-الطعام-بإحكام.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1kiNs2Hz.jpg?alt=media&token=83ca0667-a63b-4b8c-9221-387233ad0f51" alt="جهاز إغلاق أكياس الطعام بإحكام" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز إغلاق أكياس الطعام بإحكام</h3>
+<div class="price-box">
+<span class="sale-price">40.8 ر.ع</span>
+<span class="original-price">45.8 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-إغلاق-أكياس-الطعام-بإحكام.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/بلوز-نسائية-لشد-الجسم.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQ55nIv7c.jpg?alt=media&token=5f0fe65b-fd96-4277-92a9-4df40a49659c" alt="بلوز نسائية لشد الجسم" class="card-image" loading="lazy">
+<h3 class="card-title">بلوز نسائية لشد الجسم</h3>
+<div class="price-box">
+<span class="sale-price">23.7 ر.ع</span>
+<span class="original-price">28.7 ر.ع</span>
+</div>
+<a href="/products-pages/بلوز-نسائية-لشد-الجسم.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مبخرة-اللؤلؤ-إلاكترونية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatWiuIanl3.jpg?alt=media&token=328e5ebe-6487-4dfe-a1c1-5c1c9ef59436" alt="مبخرة اللؤلؤ إلاكترونية" class="card-image" loading="lazy">
+<h3 class="card-title">مبخرة اللؤلؤ إلاكترونية</h3>
+<div class="price-box">
+<span class="sale-price">23 ر.ع</span>
+<span class="original-price">28 ر.ع</span>
+</div>
+<a href="/products-pages/مبخرة-اللؤلؤ-إلاكترونية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مظلة-واقية-من-الشمس-للزجاج-الأمامي-للسيارة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaaterkomipk.jpg?alt=media&token=bc56fcf9-6082-4942-b145-4eec4337cb0c" alt="مظلة واقية من الشمس للزجاج الأمامي للسيارة" class="card-image" loading="lazy">
+<h3 class="card-title">مظلة واقية من الشمس للزجاج الأمامي للسيارة</h3>
+<div class="price-box">
+<span class="sale-price">16.1 ر.ع</span>
+<span class="original-price">21.1 ر.ع</span>
+</div>
+<a href="/products-pages/مظلة-واقية-من-الشمس-للزجاج-الأمامي-للسيارة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حزام-القطعة-الواحدة-لتنحيف-للبطن-والافخاد.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat44ByaLqr.jpg?alt=media&token=a38fd14e-f9d6-42f5-bdbd-5518fc3a42a5" alt="حزام القطعة الواحدة لتنحيف للبطن والافخاد" class="card-image" loading="lazy">
+<h3 class="card-title">حزام القطعة الواحدة لتنحيف للبطن والافخاد</h3>
+<div class="price-box">
+<span class="sale-price">22.4 ر.ع</span>
+<span class="original-price">27.4 ر.ع</span>
+</div>
+<a href="/products-pages/حزام-القطعة-الواحدة-لتنحيف-للبطن-والافخاد.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/فرد-نانو-المحمول-للتعقيم-بالبخار.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatICXKWYUD.jpg?alt=media&token=b26773d6-c896-4858-9ed4-f3c23065aea9" alt="فرد  نانو المحمول للتعقيم بالبخار" class="card-image" loading="lazy">
+<h3 class="card-title">فرد  نانو المحمول للتعقيم بالبخار</h3>
+<div class="price-box">
+<span class="sale-price">27.6 ر.ع</span>
+<span class="original-price">32.6 ر.ع</span>
+</div>
+<a href="/products-pages/فرد-نانو-المحمول-للتعقيم-بالبخار.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-تعقيم.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1fdkH8hB.jpg?alt=media&token=f60ec3fa-d74d-4fe1-aa8c-e2807c503b9b" alt="جهاز تعقيم" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز تعقيم</h3>
+<div class="price-box">
+<span class="sale-price">28.3 ر.ع</span>
+<span class="original-price">33.3 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-تعقيم.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-ازالة-الشامات-المنزلي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQ2AfcxGR.jfif?alt=media&token=0c9d05e2-896b-4bff-937f-0d31a31f82b8" alt="جهاز ازالة الشامات المنزلي" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز ازالة الشامات المنزلي</h3>
+<div class="price-box">
+<span class="sale-price">21.3 ر.ع</span>
+<span class="original-price">26.3 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-ازالة-الشامات-المنزلي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-الكتروني.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6bM3peMz.jpg?alt=media&token=2632c5a0-910f-4404-8f4d-44f7abe354a8" alt="جهاز الكتروني" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز الكتروني</h3>
+<div class="price-box">
+<span class="sale-price">19.1 ر.ع</span>
+<span class="original-price">24.1 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-الكتروني.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/كاميرا-مراقبة-لاسلكية-شكل-لمبة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6m0rHUuN.jpg?alt=media&token=d6a6556d-48f1-46e2-8832-596662b26df4" alt="كاميرا مراقبة لاسلكية شكل لمبة" class="card-image" loading="lazy">
+<h3 class="card-title">كاميرا مراقبة لاسلكية شكل لمبة</h3>
+<div class="price-box">
+<span class="sale-price">19.5 ر.ع</span>
+<span class="original-price">24.5 ر.ع</span>
+</div>
+<a href="/products-pages/كاميرا-مراقبة-لاسلكية-شكل-لمبة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مجموعة-راس-الدش.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatMff1jBne.jpg?alt=media&token=4ea69768-e306-4d0c-9851-433be0c7916a" alt="مجموعة راس الدش" class="card-image" loading="lazy">
+<h3 class="card-title">مجموعة راس الدش</h3>
+<div class="price-box">
+<span class="sale-price">19.4 ر.ع</span>
+<span class="original-price">24.4 ر.ع</span>
+</div>
+<a href="/products-pages/مجموعة-راس-الدش.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/لعبة-الصبارة-للاطفال.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatafGp4Ixa.jpg?alt=media&token=fd13389c-cee5-406f-bc67-e70074c549a3" alt="لعبة الصبارة للاطفال" class="card-image" loading="lazy">
+<h3 class="card-title">لعبة الصبارة للاطفال</h3>
+<div class="price-box">
+<span class="sale-price">23.2 ر.ع</span>
+<span class="original-price">28.2 ر.ع</span>
+</div>
+<a href="/products-pages/لعبة-الصبارة-للاطفال.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/ماكنة-الحلاقة-للاطفال.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat4BtVUbC3.jpg?alt=media&token=7328b502-932d-4f4f-a62a-1e98ff9bb3ac" alt="ماكنة الحلاقة للاطفال" class="card-image" loading="lazy">
+<h3 class="card-title">ماكنة الحلاقة للاطفال</h3>
+<div class="price-box">
+<span class="sale-price">27.6 ر.ع</span>
+<span class="original-price">32.6 ر.ع</span>
+</div>
+<a href="/products-pages/ماكنة-الحلاقة-للاطفال.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مملس-الشعر-من-كيمي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat16lOFAhh.jpg?alt=media&token=215a9365-bdd3-46ce-9100-8b6a52739826" alt="مملس الشعر من كيمي" class="card-image" loading="lazy">
+<h3 class="card-title">مملس الشعر من كيمي</h3>
+<div class="price-box">
+<span class="sale-price">21 ر.ع</span>
+<span class="original-price">26 ر.ع</span>
+</div>
+<a href="/products-pages/مملس-الشعر-من-كيمي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-تمارين-عضلات-البطن-مع-دعم-منزلي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatymutNkS8.jpeg?alt=media&token=08de4f89-6d52-46f3-aad7-121d0cb81320" alt="جهاز تمارين عضلات البطن مع دعم منزلي" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز تمارين عضلات البطن مع دعم منزلي</h3>
+<div class="price-box">
+<span class="sale-price">19.8 ر.ع</span>
+<span class="original-price">24.8 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-تمارين-عضلات-البطن-مع-دعم-منزلي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/صنبور-المياه-الاستشعار-التلقائي-الأشعة-تحت-الحمراء.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatJ5KbxEbR.jpg?alt=media&token=ae02ae42-3aa4-4302-9e4c-fb2f6898af31" alt="صنبور المياه الاستشعار التلقائي الأشعة تحت الحمراء" class="card-image" loading="lazy">
+<h3 class="card-title">صنبور المياه الاستشعار التلقائي الأشعة تحت الحمراء</h3>
+<div class="price-box">
+<span class="sale-price">26.6 ر.ع</span>
+<span class="original-price">31.6 ر.ع</span>
+</div>
+<a href="/products-pages/صنبور-المياه-الاستشعار-التلقائي-الأشعة-تحت-الحمراء.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/لمبة-قابلة-للطي-تعمل-بالطاقة-الشمسية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatDmrU7bIG.crdownload?alt=media&token=48f6b7b6-fe87-495b-8b40-502ceaf66e8c" alt="لمبة قابلة للطي تعمل بالطاقة الشمسية" class="card-image" loading="lazy">
+<h3 class="card-title">لمبة قابلة للطي تعمل بالطاقة الشمسية</h3>
+<div class="price-box">
+<span class="sale-price">21.8 ر.ع</span>
+<span class="original-price">26.8 ر.ع</span>
+</div>
+<a href="/products-pages/لمبة-قابلة-للطي-تعمل-بالطاقة-الشمسية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/موقد-شبكي-فولاذي-قابل-للطي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQv12FuF3.jpg?alt=media&token=b6e04c78-292e-4b0d-9ae8-497250eff301" alt="موقد شبكي فولاذي قابل للطي" class="card-image" loading="lazy">
+<h3 class="card-title">موقد شبكي فولاذي قابل للطي</h3>
+<div class="price-box">
+<span class="sale-price">23.5 ر.ع</span>
+<span class="original-price">28.5 ر.ع</span>
+</div>
+<a href="/products-pages/موقد-شبكي-فولاذي-قابل-للطي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-الحجامة-الذكي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatogHffDiV.webp?alt=media&token=f3972ac6-1f02-4bff-958b-b2087d03813a" alt="جهاز الحجامة الذكي" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز الحجامة الذكي</h3>
+<div class="price-box">
+<span class="sale-price">22 ر.ع</span>
+<span class="original-price">27 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-الحجامة-الذكي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مشط-لازالة-القمل.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6Zic4Bus.jpg?alt=media&token=49d1921f-da87-4ce1-9d7d-68bd9f602c27" alt="مشط لازالة القمل" class="card-image" loading="lazy">
+<h3 class="card-title">مشط لازالة القمل</h3>
+<div class="price-box">
+<span class="sale-price">19.2 ر.ع</span>
+<span class="original-price">24.2 ر.ع</span>
+</div>
+<a href="/products-pages/مشط-لازالة-القمل.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/النظارات-الشمسية-مع-سماعات-بلوتوث-لاسلكية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaataWEBSFOV.jpg?alt=media&token=e8848c29-25a2-48da-90ea-8578a25695f6" alt="النظارات الشمسية مع سماعات بلوتوث لاسلكية" class="card-image" loading="lazy">
+<h3 class="card-title">النظارات الشمسية مع سماعات بلوتوث لاسلكية</h3>
+<div class="price-box">
+<span class="sale-price">21 ر.ع</span>
+<span class="original-price">26 ر.ع</span>
+</div>
+<a href="/products-pages/النظارات-الشمسية-مع-سماعات-بلوتوث-لاسلكية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مموج-الشعر-الاوتوماتيكي-من-سيكرت-ويف.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatARHeuYRe.jpg?alt=media&token=3d30aecb-7062-47b6-9925-a83c3de93b3c" alt="مموج الشعر الاوتوماتيكي من سيكرت ويف" class="card-image" loading="lazy">
+<h3 class="card-title">مموج الشعر الاوتوماتيكي من سيكرت ويف</h3>
+<div class="price-box">
+<span class="sale-price">24.7 ر.ع</span>
+<span class="original-price">29.7 ر.ع</span>
+</div>
+<a href="/products-pages/مموج-الشعر-الاوتوماتيكي-من-سيكرت-ويف.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/قلم-تصليح-يعمل-بالبلاستيك-السائل-و-الأشعة-فوق-البنفسجية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQiLXIOrT.jfif?alt=media&token=d9cba6d3-c2d4-4e33-a39f-f4e69bbd8199" alt="قلم تصليح يعمل بالبلاستيك السائل و الأشعة فوق البنفسجية" class="card-image" loading="lazy">
+<h3 class="card-title">قلم تصليح يعمل بالبلاستيك السائل و الأشعة فوق البنفسجية</h3>
+<div class="price-box">
+<span class="sale-price">20.6 ر.ع</span>
+<span class="original-price">25.6 ر.ع</span>
+</div>
+<a href="/products-pages/قلم-تصليح-يعمل-بالبلاستيك-السائل-و-الأشعة-فوق-البنفسجية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/موزع-معجون-أسنان-بلاستيكي-مع-4-اكواب.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatnuLDdjVd.jpg?alt=media&token=bf3dee9e-6f71-426c-bb1e-450050fada31" alt="موزع معجون أسنان بلاستيكي مع 4 اكواب" class="card-image" loading="lazy">
+<h3 class="card-title">موزع معجون أسنان بلاستيكي مع 4 اكواب</h3>
+<div class="price-box">
+<span class="sale-price">24.5 ر.ع</span>
+<span class="original-price">29.5 ر.ع</span>
+</div>
+<a href="/products-pages/موزع-معجون-أسنان-بلاستيكي-مع-4-اكواب.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/شورت-نسائي-لإخفاء-الكرش-من-سلم-لفت.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatomzyRjvC.jpg?alt=media&token=207d5d48-cdb1-490a-8762-52c1c32ee3ea" alt="شورت نسائي لإخفاء الكرش من سلم لفت" class="card-image" loading="lazy">
+<h3 class="card-title">شورت نسائي لإخفاء الكرش من سلم لفت</h3>
+<div class="price-box">
+<span class="sale-price">19.8 ر.ع</span>
+<span class="original-price">24.8 ر.ع</span>
+</div>
+<a href="/products-pages/شورت-نسائي-لإخفاء-الكرش-من-سلم-لفت.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مملس-الشعر-البخاري.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatemSNzd9t.png?alt=media&token=fb3a14db-795d-4c4a-9839-2fea612e86ff" alt="مملس الشعر البخاري" class="card-image" loading="lazy">
+<h3 class="card-title">مملس الشعر البخاري</h3>
+<div class="price-box">
+<span class="sale-price">29 ر.ع</span>
+<span class="original-price">34 ر.ع</span>
+</div>
+<a href="/products-pages/مملس-الشعر-البخاري.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/قفازات-شواء-قابلة-للحرارة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatMiun2g1b.jpeg?alt=media&token=0b37f2c1-4714-4d4c-8126-a2491cf23e8e" alt="قفازات شواء قابلة للحرارة" class="card-image" loading="lazy">
+<h3 class="card-title">قفازات شواء قابلة للحرارة</h3>
+<div class="price-box">
+<span class="sale-price">23.2 ر.ع</span>
+<span class="original-price">28.2 ر.ع</span>
+</div>
+<a href="/products-pages/قفازات-شواء-قابلة-للحرارة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/كريم-إزالة-الثآليل-من-سومفون.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat19ECTdTF.jpg?alt=media&token=4a6ec6e2-69a6-4e37-b5b3-8786496c7978" alt="كريم إزالة الثآليل من سومفون" class="card-image" loading="lazy">
+<h3 class="card-title">كريم إزالة الثآليل من سومفون</h3>
+<div class="price-box">
+<span class="sale-price">14.6 ر.ع</span>
+<span class="original-price">19.6 ر.ع</span>
+</div>
+<a href="/products-pages/كريم-إزالة-الثآليل-من-سومفون.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/نظارة-القيادة-الليلية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatgsswVqZI.jpg?alt=media&token=1bb583d5-07b0-43f5-abc4-33a3ee6c52d8" alt="نظارة القيادة الليلية" class="card-image" loading="lazy">
+<h3 class="card-title">نظارة القيادة الليلية</h3>
+<div class="price-box">
+<span class="sale-price">15.5 ر.ع</span>
+<span class="original-price">20.5 ر.ع</span>
+</div>
+<a href="/products-pages/نظارة-القيادة-الليلية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مكنسة-كهربائية-محمولة-3-في-1.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatxgvapQx6.jpg?alt=media&token=eb5dd8c1-80ae-4999-bff7-693777661de4" alt="مكنسة كهربائية محمولة 3 في 1" class="card-image" loading="lazy">
+<h3 class="card-title">مكنسة كهربائية محمولة 3 في 1</h3>
+<div class="price-box">
+<span class="sale-price">18 ر.ع</span>
+<span class="original-price">23 ر.ع</span>
+</div>
+<a href="/products-pages/مكنسة-كهربائية-محمولة-3-في-1.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حقيبة-الطفل-للسفر.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatYDxlJtwk.jpg?alt=media&token=928656c5-425f-4f96-aad9-10edb07b2160" alt="حقيبة الطفل للسفر" class="card-image" loading="lazy">
+<h3 class="card-title">حقيبة الطفل للسفر</h3>
+<div class="price-box">
+<span class="sale-price">26.6 ر.ع</span>
+<span class="original-price">31.6 ر.ع</span>
+</div>
+<a href="/products-pages/حقيبة-الطفل-للسفر.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/منشفة-عمامة-للشعر.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFSFjmUf7.jpg?alt=media&token=30faca46-0d12-489d-aeee-a92d9b50dd0a" alt="منشفة عمامة للشعر" class="card-image" loading="lazy">
+<h3 class="card-title">منشفة عمامة للشعر</h3>
+<div class="price-box">
+<span class="sale-price">20.9 ر.ع</span>
+<span class="original-price">25.9 ر.ع</span>
+</div>
+<a href="/products-pages/منشفة-عمامة-للشعر.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مموج-الشعر-التلقائي-اللاسلكي.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGrGdh6PK.jpg?alt=media&token=e0a65f03-6477-452f-b168-85a85af241b3" alt="مموج الشعر التلقائي اللاسلكي" class="card-image" loading="lazy">
+<h3 class="card-title">مموج الشعر التلقائي اللاسلكي</h3>
+<div class="price-box">
+<span class="sale-price">28.3 ر.ع</span>
+<span class="original-price">33.3 ر.ع</span>
+</div>
+<a href="/products-pages/مموج-الشعر-التلقائي-اللاسلكي.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/سروال-سباحة-متغير-اللون-للرجال.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatBOcHq3jM.jpg?alt=media&token=c737a24c-dc86-4629-8064-bf5da74da83c" alt="سروال سباحة متغير اللون للرجال" class="card-image" loading="lazy">
+<h3 class="card-title">سروال سباحة متغير اللون للرجال</h3>
+<div class="price-box">
+<span class="sale-price">23.2 ر.ع</span>
+<span class="original-price">28.2 ر.ع</span>
+</div>
+<a href="/products-pages/سروال-سباحة-متغير-اللون-للرجال.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حامل-الهاتف-المحمول.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat7nVgrD8B.jpeg?alt=media&token=fdf8c373-68f5-48a4-93e4-36f85754177f" alt="حامل الهاتف المحمول" class="card-image" loading="lazy">
+<h3 class="card-title">حامل الهاتف المحمول</h3>
+<div class="price-box">
+<span class="sale-price">24.6 ر.ع</span>
+<span class="original-price">29.6 ر.ع</span>
+</div>
+<a href="/products-pages/حامل-الهاتف-المحمول.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/إضاءة-مكياج-احترافية-لاسلكية-من-ستوديو-جلو.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGZIn9S3S.jpg?alt=media&token=bad0e62f-0c10-4d42-a9d3-d399d4f09121" alt="إضاءة مكياج احترافية لاسلكية من ستوديو جلو" class="card-image" loading="lazy">
+<h3 class="card-title">إضاءة مكياج احترافية لاسلكية من ستوديو جلو</h3>
+<div class="price-box">
+<span class="sale-price">19.3 ر.ع</span>
+<span class="original-price">24.3 ر.ع</span>
+</div>
+<a href="/products-pages/إضاءة-مكياج-احترافية-لاسلكية-من-ستوديو-جلو.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مشد-سويت-شيبر-لتنحيف-البطن.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaathhE92nu7.png?alt=media&token=4b37e587-ce99-4f95-b342-81059233292a" alt="مشد  سويت شيبر لتنحيف البطن" class="card-image" loading="lazy">
+<h3 class="card-title">مشد  سويت شيبر لتنحيف البطن</h3>
+<div class="price-box">
+<span class="sale-price">22 ر.ع</span>
+<span class="original-price">27 ر.ع</span>
+</div>
+<a href="/products-pages/مشد-سويت-شيبر-لتنحيف-البطن.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/ماكنة-الحلاقة-الرجالية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKhrVmJUx.jpg?alt=media&token=db577dc3-6a76-428c-98ce-5eae13aab806" alt="ماكنة الحلاقة الرجالية" class="card-image" loading="lazy">
+<h3 class="card-title">ماكنة الحلاقة الرجالية</h3>
+<div class="price-box">
+<span class="sale-price">19.2 ر.ع</span>
+<span class="original-price">24.2 ر.ع</span>
+</div>
+<a href="/products-pages/ماكنة-الحلاقة-الرجالية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/كاميرا-تصوير-للسيارة-امامية-وخلفية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGclZQvLo.jpg?alt=media&token=00b92f8a-1298-4dab-b1c9-1041dd9ec9ef" alt="كاميرا تصوير للسيارة امامية وخلفية" class="card-image" loading="lazy">
+<h3 class="card-title">كاميرا تصوير للسيارة امامية وخلفية</h3>
+<div class="price-box">
+<span class="sale-price">25.1 ر.ع</span>
+<span class="original-price">30.1 ر.ع</span>
+</div>
+<a href="/products-pages/كاميرا-تصوير-للسيارة-امامية-وخلفية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/نظارة-الرؤية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatL3beMJ3P.jpg?alt=media&token=d606177e-fa73-40f5-be6e-c0fe38c0b227" alt="نظارة الرؤية" class="card-image" loading="lazy">
+<h3 class="card-title">نظارة الرؤية</h3>
+<div class="price-box">
+<span class="sale-price">19.2 ر.ع</span>
+<span class="original-price">24.2 ر.ع</span>
+</div>
+<a href="/products-pages/نظارة-الرؤية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/ستائر-نافذة-السيارة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat57oQCOOv.jpg?alt=media&token=5dc35a3d-3f65-4143-969d-33b9f97806df" alt="ستائر نافذة السيارة" class="card-image" loading="lazy">
+<h3 class="card-title">ستائر نافذة السيارة</h3>
+<div class="price-box">
+<span class="sale-price">23.7 ر.ع</span>
+<span class="original-price">28.7 ر.ع</span>
+</div>
+<a href="/products-pages/ستائر-نافذة-السيارة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/أداة-ميكرو-تاتش-سولو-لإزالة-كامل-شعر-الجسم-A.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat7JxvKiu0.jpg?alt=media&token=1f049350-215d-45f5-9653-70119fdc96e1" alt="أداة ميكرو تاتش سولو لإزالة كامل شعر الجسم A." class="card-image" loading="lazy">
+<h3 class="card-title">أداة ميكرو تاتش سولو لإزالة كامل شعر الجسم A.</h3>
+<div class="price-box">
+<span class="sale-price">19.1 ر.ع</span>
+<span class="original-price">24.1 ر.ع</span>
+</div>
+<a href="/products-pages/أداة-ميكرو-تاتش-سولو-لإزالة-كامل-شعر-الجسم-A.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-التراسونيك-لازالة-الزيون-والرؤوس-السوداء.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatjbHccluG.jpg?alt=media&token=9866fe95-4903-4745-a08a-a5d20332d03c" alt="جهاز التراسونيك لازالة الزيون والرؤوس السوداء" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز التراسونيك لازالة الزيون والرؤوس السوداء</h3>
+<div class="price-box">
+<span class="sale-price">22.3 ر.ع</span>
+<span class="original-price">27.3 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-التراسونيك-لازالة-الزيون-والرؤوس-السوداء.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-ريفوفليكس-للتمارين-الرياضية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKiNjrD8C.jpg?alt=media&token=0b04f00c-3a12-4ed6-a6fe-e745bdef552b" alt="جهاز ريفوفليكس للتمارين الرياضية" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز ريفوفليكس للتمارين الرياضية</h3>
+<div class="price-box">
+<span class="sale-price">22.3 ر.ع</span>
+<span class="original-price">27.3 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-ريفوفليكس-للتمارين-الرياضية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حزام-شد-البطن.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFDZAbmvN.jpg?alt=media&token=0cd157ba-187c-4baf-8cbe-ed38e814d2e5" alt="حزام شد البطن" class="card-image" loading="lazy">
+<h3 class="card-title">حزام شد البطن</h3>
+<div class="price-box">
+<span class="sale-price">23.6 ر.ع</span>
+<span class="original-price">28.6 ر.ع</span>
+</div>
+<a href="/products-pages/حزام-شد-البطن.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/قطاعة-خضروات-متعددة-الوظائف-5-في-1.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1MgF0Uy8.png?alt=media&token=27ae5ca6-d284-4443-a899-368751d06913" alt="قطاعة خضروات متعددة الوظائف 5 في 1" class="card-image" loading="lazy">
+<h3 class="card-title">قطاعة خضروات متعددة الوظائف 5 في 1</h3>
+<div class="price-box">
+<span class="sale-price">24 ر.ع</span>
+<span class="original-price">29 ر.ع</span>
+</div>
+<a href="/products-pages/قطاعة-خضروات-متعددة-الوظائف-5-في-1.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/جهاز-لشفط-و-إزالة-الرؤوس-السوداء.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatRb9HMnpS.jpg?alt=media&token=6708d532-2cac-4f62-bf8d-0fffad5a01f7" alt="جهاز لشفط و إزالة الرؤوس السوداء" class="card-image" loading="lazy">
+<h3 class="card-title">جهاز لشفط و إزالة الرؤوس السوداء</h3>
+<div class="price-box">
+<span class="sale-price">20.9 ر.ع</span>
+<span class="original-price">25.9 ر.ع</span>
+</div>
+<a href="/products-pages/جهاز-لشفط-و-إزالة-الرؤوس-السوداء.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/لصقات-علاج-آلام-الركبة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatfoMWkS9B.jpg?alt=media&token=18900ce0-082c-4159-a96c-b11a057b0084" alt="لصقات علاج آلام الركبة" class="card-image" loading="lazy">
+<h3 class="card-title">لصقات علاج آلام الركبة</h3>
+<div class="price-box">
+<span class="sale-price">19.8 ر.ع</span>
+<span class="original-price">24.8 ر.ع</span>
+</div>
+<a href="/products-pages/لصقات-علاج-آلام-الركبة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/لاصق-مقاوم-للماء-لإصلاح-التشققات-و-التسربات.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatCl8LYlGn.jpg?alt=media&token=9e8baf58-aa96-4600-a34c-60b88f91ba5d" alt="لاصق مقاوم للماء لإصلاح التشققات و التسربات" class="card-image" loading="lazy">
+<h3 class="card-title">لاصق مقاوم للماء لإصلاح التشققات و التسربات</h3>
+<div class="price-box">
+<span class="sale-price">18.5 ر.ع</span>
+<span class="original-price">23.5 ر.ع</span>
+</div>
+<a href="/products-pages/لاصق-مقاوم-للماء-لإصلاح-التشققات-و-التسربات.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/معقم-فرشاة-الأسنان-الذكي-متعدد-الوظائف.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatAjq39NOh.jpg?alt=media&token=5d675629-110f-4908-b73e-93a774a22e65" alt="معقم فرشاة الأسنان الذكي متعدد الوظائف" class="card-image" loading="lazy">
+<h3 class="card-title">معقم فرشاة الأسنان الذكي متعدد الوظائف</h3>
+<div class="price-box">
+<span class="sale-price">20 ر.ع</span>
+<span class="original-price">25 ر.ع</span>
+</div>
+<a href="/products-pages/معقم-فرشاة-الأسنان-الذكي-متعدد-الوظائف.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مغطس-و-جهاز-مساج-للقدمين.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaatf0WF7awn.jpg?alt=media&token=4f7b8a35-f164-45e5-a5c5-1be69b97553f" alt="مغطس و جهاز مساج للقدمين" class="card-image" loading="lazy">
+<h3 class="card-title">مغطس و جهاز مساج للقدمين</h3>
+<div class="price-box">
+<span class="sale-price">28.6 ر.ع</span>
+<span class="original-price">33.6 ر.ع</span>
+</div>
+<a href="/products-pages/مغطس-و-جهاز-مساج-للقدمين.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/سرير-قابل-للنفخ-للسيارة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatzIOHqJ1s.jpeg?alt=media&token=49804203-a589-44bf-9215-ebb3b27bbf7a" alt="سرير قابل للنفخ للسيارة" class="card-image" loading="lazy">
+<h3 class="card-title">سرير قابل للنفخ للسيارة</h3>
+<div class="price-box">
+<span class="sale-price">26.8 ر.ع</span>
+<span class="original-price">31.8 ر.ع</span>
+</div>
+<a href="/products-pages/سرير-قابل-للنفخ-للسيارة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/كريم-الكولاجين-لعلاج-الشعر-التالف.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatTqLk0OnX.jpg?alt=media&token=f2b5dfa4-a38d-40df-87ea-ae72451a5903" alt="كريم الكولاجين لعلاج الشعر التالف" class="card-image" loading="lazy">
+<h3 class="card-title">كريم الكولاجين لعلاج الشعر التالف</h3>
+<div class="price-box">
+<span class="sale-price">23.5 ر.ع</span>
+<span class="original-price">28.5 ر.ع</span>
+</div>
+<a href="/products-pages/كريم-الكولاجين-لعلاج-الشعر-التالف.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حزام-نحت-البطن-و-الخصر-من-سويت.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatolceXA50.jpg?alt=media&token=7b91d683-3223-453e-b042-be639dc09a59" alt="حزام نحت البطن و الخصر من سويت" class="card-image" loading="lazy">
+<h3 class="card-title">حزام نحت البطن و الخصر من سويت</h3>
+<div class="price-box">
+<span class="sale-price">20.4 ر.ع</span>
+<span class="original-price">25.4 ر.ع</span>
+</div>
+<a href="/products-pages/حزام-نحت-البطن-و-الخصر-من-سويت.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/قطاعة-اللحوم-الكهربائية-الأوتوماتيكية.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat3xXHBn9e.jpg?alt=media&token=0ec8a640-d869-4f0e-a48e-b232a7f84b63" alt="قطاعة اللحوم الكهربائية الأوتوماتيكية" class="card-image" loading="lazy">
+<h3 class="card-title">قطاعة اللحوم الكهربائية الأوتوماتيكية</h3>
+<div class="price-box">
+<span class="sale-price">20.8 ر.ع</span>
+<span class="original-price">25.8 ر.ع</span>
+</div>
+<a href="/products-pages/قطاعة-اللحوم-الكهربائية-الأوتوماتيكية.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/مسن-سكاكين-كهربائي-2-عين.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaathIBn6AdS.jpg?alt=media&token=b2c45bdd-b001-4093-a9a1-ed0f0d36669b" alt="مسن سكاكين كهربائي 2 عين" class="card-image" loading="lazy">
+<h3 class="card-title">مسن سكاكين كهربائي 2 عين</h3>
+<div class="price-box">
+<span class="sale-price">24.6 ر.ع</span>
+<span class="original-price">29.6 ر.ع</span>
+</div>
+<a href="/products-pages/مسن-سكاكين-كهربائي-2-عين.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/شامبو-الشعر-بالزنجبيل-الاسود.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatpwbQLFkE.jpg?alt=media&token=37fbeb98-3e11-49c5-9e05-5f0e79a24d89" alt="شامبو الشعر بالزنجبيل الاسود" class="card-image" loading="lazy">
+<h3 class="card-title">شامبو الشعر بالزنجبيل الاسود</h3>
+<div class="price-box">
+<span class="sale-price">20.3 ر.ع</span>
+<span class="original-price">25.3 ر.ع</span>
+</div>
+<a href="/products-pages/شامبو-الشعر-بالزنجبيل-الاسود.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/قلم-الترجمة-عالي-الدقة.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatLeh4Jz78.jpg?alt=media&token=724e6a90-d790-476d-ae41-dd9e7ba179b7" alt="قلم الترجمة عالي الدقة" class="card-image" loading="lazy">
+<h3 class="card-title">قلم الترجمة عالي الدقة</h3>
+<div class="price-box">
+<span class="sale-price">37.7 ر.ع</span>
+<span class="original-price">42.7 ر.ع</span>
+</div>
+<a href="/products-pages/قلم-الترجمة-عالي-الدقة.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/نعل-سيليكوني-لزيادة-الطول.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKzJnA6VY.jpeg?alt=media&token=6af3a0e3-dc07-4e6e-abed-df1020c96be5" alt="نعل سيليكوني لزيادة الطول" class="card-image" loading="lazy">
+<h3 class="card-title">نعل سيليكوني لزيادة الطول</h3>
+<div class="price-box">
+<span class="sale-price">18.6 ر.ع</span>
+<span class="original-price">23.6 ر.ع</span>
+</div>
+<a href="/products-pages/نعل-سيليكوني-لزيادة-الطول.html" class="btn-details">شاهد التفاصيل</a>
+</div><div class="product-card" onclick="window.location.href='/products-pages/حزام-لدعم-وتقويم-الظهر.html'">
+<img src="https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatNXP6CmUh.webp?alt=media&token=5c18ef24-7878-4013-aafb-8e914e621226" alt="حزام لدعم وتقويم الظهر" class="card-image" loading="lazy">
+<h3 class="card-title">حزام لدعم وتقويم الظهر</h3>
+<div class="price-box">
+<span class="sale-price">12.8 ر.ع</span>
+<span class="original-price">17.8 ر.ع</span>
+</div>
+<a href="/products-pages/حزام-لدعم-وتقويم-الظهر.html" class="btn-details">شاهد التفاصيل</a>
+</div>
+</div>
 </div>
 <footer style='background:#ecf0f1;color:#114c7d;text-align:center;padding:20px;margin-top:40px;'>
 <small>جميع الحقوق محفوظة &copy; سوق عمان 2025 | مسقط، عمان - الرمز البريدي: 112</small>
 <nav style='margin-top:10px;'>
-<a href='/terms.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشروط والأحكام</a>
+<a href='/terms.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشروط</a>
 <a href='/privacy.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الخصوصية</a>
 <a href='/shipping.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشحن</a>
 <a href='/returns.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الإرجاع</a>

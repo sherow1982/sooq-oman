@@ -4,64 +4,12 @@
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <title>ماكنة الحلاقة للاطفال | سوق عمان</title>
-<meta name='description' content='اشترِ ماكنة الحلاقة للاطفال بسعر 27.6 ريال عماني فقط - متجر سوق عمان'>
-<script>
-function addToCart(title, price, sku) {
-    let cart = JSON.parse(localStorage.getItem('sooqoman-cart') || '[]');
-    cart.push({ title, price, sku });
-    localStorage.setItem('sooqoman-cart', JSON.stringify(cart));
-    alert('تمت الإضافة للسلة بنجاح! ✓');
-    window.location.href = '/cart.html';
-}
-function whatsappOrder() {
-    const title = "ماكنة الحلاقة للاطفال";
-    const sku = "A.001134";
-    const price = "27.6";
-    const url = window.location.href;
-    
-    // فتح نموذج بيانات العميل في نفس الصفحة
-    document.getElementById('whatsappForm').style.display = 'flex';
-}
-function closeForm() {
-    document.getElementById('whatsappForm').style.display = 'none';
-}
-function submitOrder(event) {
-    event.preventDefault();
-    
-    const name = document.getElementById('customerName').value;
-    const phone = document.getElementById('customerPhone').value;
-    const address = document.getElementById('customerAddress').value;
-    
-    if (!name || !phone || !address) {
-        alert('الرجاء ملء جميع الحقول');
-        return;
-    }
-    
-    const title = "ماكنة الحلاقة للاطفال";
-    const sku = "A.001134";
-    const price = "27.6";
-    const url = window.location.href;
-    
-    const message = `*طلب منتج من سوق عمان*%0a%0a` +
-                   `*بيانات العميل:*%0a` +
-                   `الاسم: ${name}%0a` +
-                   `الهاتف: ${phone}%0a` +
-                   `العنوان: ${address}%0a%0a` +
-                   `*تفاصيل المنتج:*%0a` +
-                   `اسم المنتج: ${title}%0a` +
-                   `رمز المنتج (SKU): ${sku}%0a` +
-                   `السعر: ${price} ر.ع%0a` +
-                   `رابط المنتج: ${url}%0a%0a` +
-                   `*الشحن: مجاني*`;
-    
-    window.location.href = 'https://wa.me/201110760081?text=' + message;
-}
-</script>
+<meta name='description' content='اشترِ ماكنة الحلاقة للاطفال بسعر 27.6 ريال عماني - متجر سوق عمان'>
 <style>
-body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f5f5f5;direction:rtl;margin:0;padding:0;}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#f5f5f5;direction:rtl;margin:0;padding:0;}
 .container{max-width:1200px;margin:0 auto;padding:20px;}
 .product-card{background:white;border-radius:12px;padding:30px;box-shadow:0 2px 10px rgba(0,0,0,0.06);}
-.product-image{width:100%;max-width:500px;border-radius:8px;margin-bottom:20px;display:block;}
+.product-image{width:100%;max-width:500px;border-radius:8px;margin-bottom:20px;}
 h1{color:#2c3e50;margin-bottom:18px;font-size:28px;}
 .price-section{margin:20px 0;}
 .original-price{text-decoration:line-through;color:#999;font-size:18px;}
@@ -75,50 +23,30 @@ h1{color:#2c3e50;margin-bottom:18px;font-size:28px;}
 .btn-cart:hover{background:#08304c;transform:translateY(-2px);}
 .shipping-info{background:#ecf0f1;padding:13px;border-radius:6px;margin-top:17px;}
 .shipping-info p{margin:5px 0;color:#34495e;}
-.reviews-section{background:#f6f6fc;border-radius:8px;margin-top:26px;padding:18px;box-shadow:0px 1px 6px rgba(0,0,0,0.08);}
-.whatsapp-form-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;justify-content:center;align-items:center;}
-.whatsapp-form{background:white;padding:30px;border-radius:12px;max-width:500px;width:90%;box-shadow:0 4px 20px rgba(0,0,0,0.2);}
-.whatsapp-form h2{color:#114c7d;margin-bottom:20px;text-align:center;}
-.form-group{margin-bottom:20px;}
-.form-group label{display:block;margin-bottom:8px;color:#2c3e50;font-weight:bold;}
-.form-group input,.form-group textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:6px;font-size:16px;font-family:inherit;}
-.form-group textarea{resize:vertical;min-height:80px;}
-.form-buttons{display:flex;gap:10px;margin-top:25px;}
-.form-buttons button{flex:1;padding:14px;border:none;border-radius:6px;font-weight:bold;font-size:16px;cursor:pointer;transition:all 0.3s;}
-.submit-btn{background:#25D366;color:white;}
-.submit-btn:hover{background:#1da851;}
-.cancel-btn{background:#e74c3c;color:white;}
-.cancel-btn:hover{background:#c0392b;}
-@media (max-width: 768px) {
-    .container{padding:10px;}
-    .product-card{padding:20px;}
-    h1{font-size:22px;}
-    .sale-price{font-size:26px;}
-    .btn{padding:11px 25px;font-size:14px;}
-    .whatsapp-form{padding:20px;}
-}
+.reviews-section{background:#f6f6fc;border-radius:8px;margin-top:26px;padding:18px;}
+@media (max-width:768px){.container{padding:10px;}.product-card{padding:20px;}h1{font-size:22px;}.sale-price{font-size:26px;}.btn{padding:11px 25px;font-size:14px;}}
 </style>
 </head>
 <body>
 <header style='background:#114c7d;padding:20px;color:white;font-weight:bold;font-size:22px;text-align:center;'>
 <nav>
 <a href='/index.html' style='color:#fff;margin:0 15px;text-decoration:none;font-size:18px;'>الرئيسية</a>
-<a href='/terms.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشروط والأحكام</a>
-<a href='/privacy.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الخصوصية</a>
-<a href='/shipping.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الشحن</a>
-<a href='/returns.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الإرجاع</a>
+<a href='/cart.html' style='color:#fff;margin:0 15px;text-decoration:none;'>السلة 🛒</a>
+<a href='/terms.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشروط</a>
+<a href='/privacy.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الخصوصية</a>
+<a href='/shipping.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشحن</a>
 <a href='/contact.html' style='color:#fff;margin:0 15px;text-decoration:none;'>اتصل بنا</a>
 </nav>
 </header>
 <div class='container'>
 <div class='product-card'>
-<img src='https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat4BtVUbC3.jpg?alt=media&token=7328b502-932d-4f4f-a62a-1e98ff9bb3ac' alt='ماكنة الحلاقة للاطفال' class='product-image' onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%23ddd%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3Eصورة المنتج%3C/text%3E%3C/svg%3E'">
+<img src='https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat4BtVUbC3.jpg?alt=media&token=7328b502-932d-4f4f-a62a-1e98ff9bb3ac' alt='ماكنة الحلاقة للاطفال' class='product-image'>
 <h1>ماكنة الحلاقة للاطفال</h1>
 <div class='sku'>رمز المنتج: A.001134</div>
 <div class='price-section'><span class='sale-price'>27.6 ر.ع</span> <span class='original-price'>32.6 ر.ع</span></div>
 <div class='cta-buttons'>
-<button class='btn btn-cart' onclick="addToCart('ماكنة الحلاقة للاطفال', '27.6', 'A.001134')">إضافة إلى السلة</button>
-<button class='btn btn-whatsapp' onclick="whatsappOrder()">اطلب عبر واتساب</button>
+<button class='btn btn-cart' onclick="addToCart('ماكنة الحلاقة للاطفال','27.6','A.001134')">إضافة للسلة</button>
+<button class='btn btn-whatsapp' onclick="window.location.href='/checkout.html?product=%D9%85%D8%A7%D9%83%D9%86%D8%A9%20%D8%A7%D9%84%D8%AD%D9%84%D8%A7%D9%82%D8%A9%20%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84&sku=A.001134&price=27.6'">اطلب عبر واتساب</button>
 </div>
 <div class='shipping-info'>
 <p>✓ شحن مجاني لجميع أنحاء عمان</p>
@@ -131,40 +59,23 @@ h1{color:#2c3e50;margin-bottom:18px;font-size:28px;}
 </div>
 </div>
 </div>
-
-<!-- نموذج واتساب -->
-<div class='whatsapp-form-overlay' id='whatsappForm'>
-<div class='whatsapp-form'>
-<h2>📱 أكمل بياناتك للطلب</h2>
-<form onsubmit="submitOrder(event)">
-<div class='form-group'>
-<label>الاسم الكامل:</label>
-<input type='text' id='customerName' required placeholder='مثال: أحمد محمد'>
-</div>
-<div class='form-group'>
-<label>رقم الهاتف:</label>
-<input type='tel' id='customerPhone' required placeholder='مثال: 96891234567'>
-</div>
-<div class='form-group'>
-<label>العنوان الكامل:</label>
-<textarea id='customerAddress' required placeholder='مثال: مسقط، الخوير، شارع السلطان قابوس، بناية رقم 123'></textarea>
-</div>
-<div class='form-buttons'>
-<button type='submit' class='submit-btn'>إرسال الطلب</button>
-<button type='button' class='cancel-btn' onclick='closeForm()'>إلغاء</button>
-</div>
-</form>
-</div>
-</div>
-
 <footer style='background:#ecf0f1;color:#114c7d;text-align:center;padding:20px;margin-top:40px;'>
 <small>جميع الحقوق محفوظة &copy; سوق عمان 2025 | مسقط، عمان - الرمز البريدي: 112</small>
 <nav style='margin-top:10px;'>
-<a href='/terms.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشروط والأحكام</a>
+<a href='/terms.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشروط</a>
 <a href='/privacy.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الخصوصية</a>
 <a href='/shipping.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشحن</a>
 <a href='/returns.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الإرجاع</a>
 </nav>
 </footer>
+<script>
+function addToCart(title,price,sku){
+let cart=JSON.parse(localStorage.getItem('sooqoman-cart')||'[]');
+cart.push({title,price,sku});
+localStorage.setItem('sooqoman-cart',JSON.stringify(cart));
+alert('تمت الإضافة للسلة ✓');
+window.location.href='/cart.html';
+}
+</script>
 </body>
 </html>
