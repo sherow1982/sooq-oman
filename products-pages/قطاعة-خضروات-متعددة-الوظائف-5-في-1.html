@@ -10,18 +10,37 @@ function addToCart(title, price, sku) {
     let cart = JSON.parse(localStorage.getItem('sooqoman-cart') || '[]');
     cart.push({ title, price, sku });
     localStorage.setItem('sooqoman-cart', JSON.stringify(cart));
-    alert('تمت الإضافة للسلة!');
+    alert('تمت الإضافة للسلة بنجاح! ✓');
     window.location.href = '/cart.html';
 }
-function whatsappOrder(title, url, price) {
-    let name = prompt('ادخل اسمك');
+function whatsappOrder() {
+    const title = "قطاعة خضروات متعددة الوظائف 5 في 1";
+    const sku = "A.001862";
+    const price = "24";
+    const url = window.location.href;
+    
+    const name = prompt('ادخل اسمك الكامل:');
     if (!name) return;
-    let phone = prompt('ادخل رقم هاتفك');
+    
+    const phone = prompt('ادخل رقم هاتفك:');
     if (!phone) return;
-    let address = prompt('ادخل عنوانك الكامل');
+    
+    const address = prompt('ادخل عنوانك الكامل (المنطقة، الشارع، رقم المنزل):');
     if (!address) return;
-    let msg = `اسمي: ${name}%0aرقمي: ${phone}%0aالعنوان: ${address}%0aطلب منتج: ${title}%0aرابط المنتج: ${url}%0aالسعر: ${price} ر.ع`;
-    window.open('https://wa.me/201110760081?text=' + msg, '_blank');
+    
+    const message = `*طلب منتج من سوق عمان*%0a%0a` +
+                   `*بيانات العميل:*%0a` +
+                   `الاسم: ${name}%0a` +
+                   `الهاتف: ${phone}%0a` +
+                   `العنوان: ${address}%0a%0a` +
+                   `*تفاصيل المنتج:*%0a` +
+                   `اسم المنتج: ${title}%0a` +
+                   `رمز المنتج (SKU): ${sku}%0a` +
+                   `السعر: ${price} ر.ع%0a` +
+                   `رابط المنتج: ${url}%0a%0a` +
+                   `*الشحن: مجاني*`;
+    
+    window.open('https://wa.me/201110760081?text=' + message, '_blank');
 }
 </script>
 <style>
@@ -48,6 +67,7 @@ h1{color:#2c3e50;margin-bottom:18px;font-size:28px;}
     .product-card{padding:20px;}
     h1{font-size:22px;}
     .sale-price{font-size:26px;}
+    .btn{padding:11px 25px;font-size:14px;}
 }
 </style>
 </head>
@@ -70,7 +90,7 @@ h1{color:#2c3e50;margin-bottom:18px;font-size:28px;}
 <div class='price-section'><span class='sale-price'>24 ر.ع</span> <span class='original-price'>29 ر.ع</span></div>
 <div class='cta-buttons'>
 <button class='btn btn-cart' onclick="addToCart('قطاعة خضروات متعددة الوظائف 5 في 1', '24', 'A.001862')">إضافة إلى السلة</button>
-<button class='btn btn-whatsapp' onclick="whatsappOrder('قطاعة خضروات متعددة الوظائف 5 في 1', window.location.href, '24')">اطلب عبر واتساب</button>
+<button class='btn btn-whatsapp' onclick="whatsappOrder()">اطلب عبر واتساب</button>
 </div>
 <div class='shipping-info'>
 <p>✓ شحن مجاني لجميع أنحاء عمان</p>
