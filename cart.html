@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق | سوق عمان</title>
+    <meta name="description" content="سلة التسوق - سوق عمان">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; direction: rtl; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 30px 20px; }
+        h1 { text-align: center; color: #114c7d; margin-bottom: 30px; font-size: 32px; }
+        .cart-container { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .empty-cart { text-align: center; padding: 60px 20px; color: #999; }
+        .empty-cart h2 { margin-bottom: 20px; color: #666; }
+        .cart-item { display: flex; align-items: center; padding: 20px; border-bottom: 1px solid #eee; gap: 20px; }
+        .cart-item:last-child { border-bottom: none; }
+        .item-info { flex: 1; }
+        .item-title { font-size: 18px; color: #2c3e50; margin-bottom: 8px; font-weight: bold; }
+        .item-sku { font-size: 14px; color: #999; margin-bottom: 8px; }
+        .item-price { font-size: 20px; color: #e74c3c; font-weight: bold; }
+        .remove-btn { background: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
+        .remove-btn:hover { background: #c0392b; }
+        .cart-summary { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px; }
+        .summary-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 18px; }
+        .summary-row.total { font-size: 24px; font-weight: bold; color: #114c7d; border-top: 2px solid #ddd; padding-top: 15px; margin-top: 15px; }
+        .checkout-btn { width: 100%; background: #25D366; color: white; border: none; padding: 18px; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 20px; transition: all 0.3s; }
+        .checkout-btn:hover { background: #1da851; transform: translateY(-2px); }
+        .continue-shopping { display: block; text-align: center; margin-top: 20px; color: #114c7d; text-decoration: none; font-weight: bold; }
+        .continue-shopping:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .cart-item { flex-direction: column; text-align: center; }
+            .item-info { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+<header style='background:#114c7d;padding:20px;color:white;font-weight:bold;font-size:22px;text-align:center;'>
+<nav>
+<a href='/index.html' style='color:#fff;margin:0 15px;text-decoration:none;font-size:18px;'>الرئيسية</a>
+<a href='/terms.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشروط والأحكام</a>
+<a href='/privacy.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الخصوصية</a>
+<a href='/shipping.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الشحن</a>
+<a href='/returns.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الإرجاع</a>
+<a href='/contact.html' style='color:#fff;margin:0 15px;text-decoration:none;'>اتصل بنا</a>
+</nav>
+</header>
+<div class="container">
+    <h1>🛒 سلة التسوق</h1>
+    <div class="cart-container">
+        <div id="cartContent"></div>
+        <div id="cartSummary" style="display:none;">
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>المجموع الفرعي:</span>
+                    <span id="subtotal">0 ر.ع</span>
+                </div>
+                <div class="summary-row">
+                    <span>الشحن:</span>
+                    <span style="color:#27ae60;font-weight:bold;">مجاني</span>
+                </div>
+                <div class="summary-row total">
+                    <span>المجموع الكلي:</span>
+                    <span id="total">0 ر.ع</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">إتمام الطلب عبر واتساب</button>
+            </div>
+        </div>
+        <a href="/index.html" class="continue-shopping">← متابعة التسوق</a>
+    </div>
+</div>
+<footer style='background:#ecf0f1;color:#114c7d;text-align:center;padding:20px;margin-top:40px;'>
+<small>جميع الحقوق محفوظة &copy; سوق عمان 2025 | مسقط، عمان - الرمز البريدي: 112</small>
+<nav style='margin-top:10px;'>
+<a href='/terms.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشروط والأحكام</a>
+<a href='/privacy.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الخصوصية</a>
+<a href='/shipping.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشحن</a>
+<a href='/returns.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الإرجاع</a>
+</nav>
+</footer>
+
+<script>
+// تحميل السلة من localStorage
+function loadCart() {
+    const cart = JSON.parse(localStorage.getItem('sooqoman-cart') || '[]');
+    const cartContent = document.getElementById('cartContent');
+    const cartSummary = document.getElementById('cartSummary');
+
+    if (cart.length === 0) {
+        cartContent.innerHTML = `
+            <div class="empty-cart">
+                <h2>🛒 السلة فارغة</h2>
+                <p>لم تقم بإضافة أي منتجات بعد</p>
+                <a href="/index.html" style="display:inline-block;margin-top:20px;background:#114c7d;color:white;padding:12px 30px;border-radius:6px;text-decoration:none;font-weight:bold;">تصفح المنتجات</a>
+            </div>
+        `;
+        cartSummary.style.display = 'none';
+        return;
+    }
+
+    let html = '';
+    let subtotal = 0;
+
+    cart.forEach((item, index) => {
+        const price = parseFloat(item.price);
+        subtotal += price;
+
+        html += `
+            <div class="cart-item">
+                <div class="item-info">
+                    <div class="item-title">${item.title}</div>
+                    <div class="item-sku">رمز المنتج: ${item.sku}</div>
+                    <div class="item-price">${item.price} ر.ع</div>
+                </div>
+                <button class="remove-btn" onclick="removeItem(${index})">حذف</button>
+            </div>
+        `;
+    });
+
+    cartContent.innerHTML = html;
+    document.getElementById('subtotal').textContent = subtotal.toFixed(2) + ' ر.ع';
+    document.getElementById('total').textContent = subtotal.toFixed(2) + ' ر.ع';
+    cartSummary.style.display = 'block';
+}
+
+// حذف منتج من السلة
+function removeItem(index) {
+    let cart = JSON.parse(localStorage.getItem('sooqoman-cart') || '[]');
+    cart.splice(index, 1);
+    localStorage.setItem('sooqoman-cart', JSON.stringify(cart));
+    loadCart();
+}
+
+// إتمام الطلب عبر واتساب
+function checkout() {
+    const cart = JSON.parse(localStorage.getItem('sooqoman-cart') || '[]');
+
+    if (cart.length === 0) {
+        alert('السلة فارغة!');
+        return;
+    }
+
+    const name = prompt('ادخل اسمك الكامل:');
+    if (!name) return;
+
+    const phone = prompt('ادخل رقم هاتفك:');
+    if (!phone) return;
+
+    const address = prompt('ادخل عنوانك الكامل (المنطقة، الشارع، رقم المنزل):');
+    if (!address) return;
+
+    // حساب المجموع
+    let total = 0;
+    let orderDetails = '';
+
+    cart.forEach((item, i) => {
+        total += parseFloat(item.price);
+        orderDetails += `${i + 1}. ${item.title} - ${item.price} ر.ع (SKU: ${item.sku})%0a`;
+    });
+
+    // رسالة واتساب
+    const message = `*طلب جديد من سوق عمان*%0a%0a` +
+                   `*بيانات العميل:*%0a` +
+                   `الاسم: ${name}%0a` +
+                   `الهاتف: ${phone}%0a` +
+                   `العنوان: ${address}%0a%0a` +
+                   `*تفاصيل الطلب:*%0a` +
+                   orderDetails +
+                   `%0a*المجموع الكلي: ${total.toFixed(2)} ر.ع*%0a` +
+                   `*الشحن: مجاني*`;
+
+    // فتح واتساب
+    window.open('https://wa.me/201110760081?text=' + message, '_blank');
+
+    // تفريغ السلة بعد الطلب
+    if (confirm('هل تريد تفريغ السلة بعد إرسال الطلب؟')) {
+        localStorage.removeItem('sooqoman-cart');
+        loadCart();
+    }
+}
+
+// تحميل السلة عند فتح الصفحة
+window.onload = loadCart;
+</script>
+</body>
+</html>
