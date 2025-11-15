@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='ar' dir='rtl'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>جهاز إغلاق أكياس الطعام بإحكام | سوق عمان</title>
+<meta name='description' content='اشترِ جهاز إغلاق أكياس الطعام بإحكام بسعر 40.8 ريال عماني فقط - متجر سوق عمان'>
+<script>
+function addToCart(title, price, sku) {
+    let cart = JSON.parse(localStorage.getItem('sooqoman-cart') || '[]');
+    cart.push({ title, price, sku });
+    localStorage.setItem('sooqoman-cart', JSON.stringify(cart));
+    alert('تمت الإضافة للسلة!');
+    window.location.href = '/cart.html';
+}
+function whatsappOrder(title, url, price) {
+    let name = prompt('ادخل اسمك');
+    if (!name) return;
+    let phone = prompt('ادخل رقم هاتفك');
+    if (!phone) return;
+    let address = prompt('ادخل عنوانك الكامل');
+    if (!address) return;
+    let msg = `اسمي: ${name}%0aرقمي: ${phone}%0aالعنوان: ${address}%0aطلب منتج: ${title}%0aرابط المنتج: ${url}%0aالسعر: ${price} ر.ع`;
+    window.open('https://wa.me/201110760081?text=' + msg, '_blank');
+}
+</script>
+<style>
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f5f5f5;direction:rtl;margin:0;padding:0;}
+.container{max-width:1200px;margin:0 auto;padding:20px;}
+.product-card{background:white;border-radius:12px;padding:30px;box-shadow:0 2px 10px rgba(0,0,0,0.06);}
+.product-image{width:100%;max-width:500px;border-radius:8px;margin-bottom:20px;display:block;}
+h1{color:#2c3e50;margin-bottom:18px;font-size:28px;}
+.price-section{margin:20px 0;}
+.original-price{text-decoration:line-through;color:#999;font-size:18px;}
+.sale-price{color:#e74c3c;font-size:32px;font-weight:bold;margin-right:10px;}
+.sku{color:#7f8c8d;font-size:14px;margin-top:10px;}
+.cta-buttons{margin-top:28px;}
+.btn{display:inline-block;padding:13px 35px;margin:7px 7px 7px 0;border-radius:7px;border:none;cursor:pointer;font-weight:bold;font-size:16px;transition:all 0.3s;}
+.btn-whatsapp{background:#25D366;color:white;}
+.btn-whatsapp:hover{background:#1da851;transform:translateY(-2px);}
+.btn-cart{background:#114c7d;color:white;}
+.btn-cart:hover{background:#08304c;transform:translateY(-2px);}
+.shipping-info{background:#ecf0f1;padding:13px;border-radius:6px;margin-top:17px;}
+.shipping-info p{margin:5px 0;color:#34495e;}
+.reviews-section{background:#f6f6fc;border-radius:8px;margin-top:26px;padding:18px;box-shadow:0px 1px 6px rgba(0,0,0,0.08);}
+@media (max-width: 768px) {
+    .container{padding:10px;}
+    .product-card{padding:20px;}
+    h1{font-size:22px;}
+    .sale-price{font-size:26px;}
+}
+</style>
+</head>
+<body>
+<header style='background:#114c7d;padding:20px;color:white;font-weight:bold;font-size:22px;text-align:center;'>
+<nav>
+<a href='/index.html' style='color:#fff;margin:0 15px;text-decoration:none;font-size:18px;'>الرئيسية</a>
+<a href='/terms.html' style='color:#fff;margin:0 15px;text-decoration:none;'>الشروط والأحكام</a>
+<a href='/privacy.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الخصوصية</a>
+<a href='/shipping.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الشحن</a>
+<a href='/returns.html' style='color:#fff;margin:0 15px;text-decoration:none;'>سياسة الإرجاع</a>
+<a href='/contact.html' style='color:#fff;margin:0 15px;text-decoration:none;'>اتصل بنا</a>
+</nav>
+</header>
+<div class='container'>
+<div class='product-card'>
+<img src='https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1kiNs2Hz.jpg?alt=media&token=83ca0667-a63b-4b8c-9221-387233ad0f51' alt='جهاز إغلاق أكياس الطعام بإحكام' class='product-image' onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%23ddd%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3Eصورة المنتج%3C/text%3E%3C/svg%3E'">
+<h1>جهاز إغلاق أكياس الطعام بإحكام</h1>
+<div class='sku'>رمز المنتج: A.000343</div>
+<div class='price-section'><span class='sale-price'>40.8 ر.ع</span> <span class='original-price'>45.8 ر.ع</span></div>
+<div class='cta-buttons'>
+<button class='btn btn-cart' onclick="addToCart('جهاز إغلاق أكياس الطعام بإحكام', '40.8', 'A.000343')">إضافة إلى السلة</button>
+<button class='btn btn-whatsapp' onclick="whatsappOrder('جهاز إغلاق أكياس الطعام بإحكام', window.location.href, '40.8')">اطلب عبر واتساب</button>
+</div>
+<div class='shipping-info'>
+<p>✓ شحن مجاني لجميع أنحاء عمان</p>
+<p>✓ التوصيل خلال 3 أيام عمل</p>
+<p>✓ إرجاع خلال 14 يوم في حالة عيوب التصنيع</p>
+</div>
+<div class='reviews-section'>
+<b style='font-size:18px;'>تقييمات العملاء العمانيين</b>
+<div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>علا العوفي</span> - <span style='color:#FFC700;'>⭐ 4.7</span> <span style='font-size:13px;color:#888;'>2020-02-12</span><div style='margin-top:4px;'>أداء يفوق التوقعات، واصلوا النجاح!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>خالد الغافري</span> - <span style='color:#FFC700;'>⭐ 4.5</span> <span style='font-size:13px;color:#888;'>2022-01-23</span><div style='margin-top:4px;'>أفضل متجر إلكتروني في عمان حتى الآن!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>سلطان المقبالي</span> - <span style='color:#FFC700;'>⭐ 4.5</span> <span style='font-size:13px;color:#888;'>2019-07-07</span><div style='margin-top:4px;'>أفضل متجر إلكتروني في عمان حتى الآن!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>مريم الكندي</span> - <span style='color:#FFC700;'>⭐ 4.6</span> <span style='font-size:13px;color:#888;'>2025-06-03</span><div style='margin-top:4px;'>أعجبني تغليف المنتج ودقة الوصف.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>منار السويدي</span> - <span style='color:#FFC700;'>⭐ 4.5</span> <span style='font-size:13px;color:#888;'>2022-06-24</span><div style='margin-top:4px;'>أعجبني تغليف المنتج ودقة الوصف.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>جميلة الهنائي</span> - <span style='color:#FFC700;'>⭐ 4.8</span> <span style='font-size:13px;color:#888;'>2025-01-13</span><div style='margin-top:4px;'>أداء يفوق التوقعات، واصلوا النجاح!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>ظافر العوفي</span> - <span style='color:#FFC700;'>⭐ 5</span> <span style='font-size:13px;color:#888;'>2020-04-13</span><div style='margin-top:4px;'>منتج عملي جدا للمطبخ!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>حمد البوسعيدي</span> - <span style='color:#FFC700;'>⭐ 4.7</span> <span style='font-size:13px;color:#888;'>2021-03-12</span><div style='margin-top:4px;'>منتج رائع وخدمة ممتازة!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>مريم العوفي</span> - <span style='color:#FFC700;'>⭐ 5</span> <span style='font-size:13px;color:#888;'>2022-01-28</span><div style='margin-top:4px;'>تجربة جميلة وسأكرر الشراء.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>سهى السويدي</span> - <span style='color:#FFC700;'>⭐ 4.7</span> <span style='font-size:13px;color:#888;'>2021-05-05</span><div style='margin-top:4px;'>أعجبني تغليف المنتج ودقة الوصف.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>سهى المقبالي</span> - <span style='color:#FFC700;'>⭐ 4.6</span> <span style='font-size:13px;color:#888;'>2023-06-04</span><div style='margin-top:4px;'>تصميم عصري وسهل الاستخدام.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>ناصر المقبالي</span> - <span style='color:#FFC700;'>⭐ 4.9</span> <span style='font-size:13px;color:#888;'>2021-11-22</span><div style='margin-top:4px;'>منتج عملي جدا للمطبخ!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>ظافر القاسمي</span> - <span style='color:#FFC700;'>⭐ 4.9</span> <span style='font-size:13px;color:#888;'>2017-10-21</span><div style='margin-top:4px;'>تصميم عصري وسهل الاستخدام.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>سعيد الراشدي</span> - <span style='color:#FFC700;'>⭐ 5</span> <span style='font-size:13px;color:#888;'>2022-08-22</span><div style='margin-top:4px;'>منتج رائع وخدمة ممتازة!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>سهى الكندي</span> - <span style='color:#FFC700;'>⭐ 4.6</span> <span style='font-size:13px;color:#888;'>2024-01-26</span><div style='margin-top:4px;'>تجربة جميلة وسأكرر الشراء.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>سعيد الهنائي</span> - <span style='color:#FFC700;'>⭐ 4.9</span> <span style='font-size:13px;color:#888;'>2015-01-07</span><div style='margin-top:4px;'>دعم العملاء متعاون والشحن سريع.</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>محمد العوفي</span> - <span style='color:#FFC700;'>⭐ 4.6</span> <span style='font-size:13px;color:#888;'>2025-08-18</span><div style='margin-top:4px;'>منتج عملي جدا للمطبخ!</div></div><div style='border-bottom:1px solid #eee;padding:10px 0;'><span style='font-weight:bold;color:#156c28;'>سلطان القاسمي</span> - <span style='color:#FFC700;'>⭐ 4.6</span> <span style='font-size:13px;color:#888;'>2015-06-04</span><div style='margin-top:4px;'>تصميم عصري وسهل الاستخدام.</div></div>
+</div>
+</div>
+</div>
+<footer style='background:#ecf0f1;color:#114c7d;text-align:center;padding:20px;margin-top:40px;'>
+<small>جميع الحقوق محفوظة &copy; سوق عمان 2025 | مسقط، عمان - الرمز البريدي: 112</small>
+<nav style='margin-top:10px;'>
+<a href='/terms.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشروط والأحكام</a>
+<a href='/privacy.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الخصوصية</a>
+<a href='/shipping.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الشحن</a>
+<a href='/returns.html' style='color:#114c7d;margin:0 10px;text-decoration:underline;'>الإرجاع</a>
+</nav>
+</footer>
+</body>
+</html>
