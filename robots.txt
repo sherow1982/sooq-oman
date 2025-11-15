@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sooq-oman.arabsad.com/sitemap.xml
