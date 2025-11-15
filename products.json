@@ -1,0 +1,677 @@
+[
+  {
+    "id": 1,
+    "sku": "A.001436",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatCZ76KDh6.jpg?alt=media&token=198ae048-c196-4cb5-8b93-25951aca3f16",
+    "title": "قطاعة الخضار اليدوية",
+    "price": 25,
+    "sale_price": 20,
+    "gtin": "none"
+  },
+  {
+    "id": 2,
+    "sku": "A.003270",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatDYZ0ahRZ.jpg?alt=media&token=220cac33-c50a-4621-973e-b02e6c72a692",
+    "title": "حقيبة كتف بحمالة رياضية للشحن ضد السرقة",
+    "price": 27.8,
+    "sale_price": 22.8,
+    "gtin": "none"
+  },
+  {
+    "id": 3,
+    "sku": "A.003144",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatENn6gxiK.jpg?alt=media&token=7e998443-c4a9-4e27-b192-468bcf30ed4a",
+    "title": "ماكينة حلاقة كهربائية صغيرة",
+    "price": 25,
+    "sale_price": 20,
+    "gtin": "none"
+  },
+  {
+    "id": 4,
+    "sku": "A.001499",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatmBgYRYpQ.jpeg?alt=media&token=57c59dc6-2588-4212-98c9-e7a5e6c97872",
+    "title": "جهاز مساج القدمين",
+    "price": 24.9,
+    "sale_price": 19.9,
+    "gtin": "none"
+  },
+  {
+    "id": 5,
+    "sku": "A.001348",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatfcL5SLTQ.jpeg?alt=media&token=4086f151-b5b2-4e48-a0f9-2835d83174b8",
+    "title": "مكيف هوائي محمول",
+    "price": 30.2,
+    "sale_price": 25.2,
+    "gtin": "none"
+  },
+  {
+    "id": 6,
+    "sku": "A.000467",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat0UaeHaUD.jpg?alt=media&token=63895bf9-0223-4d2f-bcc7-62b14e5c6030",
+    "title": "مكيف الهواء المتنقل",
+    "price": 30,
+    "sale_price": 25,
+    "gtin": "none"
+  },
+  {
+    "id": 7,
+    "sku": "A.003518",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatdZa5iUhi.webp?alt=media&token=118f1451-678d-4d2f-96e6-148b55f379c4",
+    "title": "سائل إصلاح الزجاج الأمامي للسيارات",
+    "price": 24.3,
+    "sale_price": 19.3,
+    "gtin": "none"
+  },
+  {
+    "id": 8,
+    "sku": "A.001121",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaath4B7PEq8.jpg?alt=media&token=a6b5cfd4-ca94-4e67-9cae-649b65ba21fb",
+    "title": "حلقة هولا هوب لتنحيف الخصر",
+    "price": 26.8,
+    "sale_price": 21.8,
+    "gtin": "none"
+  },
+  {
+    "id": 9,
+    "sku": "A.003176",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFezzopz2.jfif?alt=media&token=5a1513c8-671c-4f07-8d4e-4d897577778e",
+    "title": "جل تبييض الأسنان EELHOE",
+    "price": 25.2,
+    "sale_price": 20.2,
+    "gtin": "none"
+  },
+  {
+    "id": 10,
+    "sku": "A.000896",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatUZGPaHxq.jpeg?alt=media&token=85822074-1a99-42c1-a3d1-377ba1969c91",
+    "title": "جهاز مساج وتدليك الجسم الطبي",
+    "price": 27.5,
+    "sale_price": 22.5,
+    "gtin": "none"
+  },
+  {
+    "id": 11,
+    "sku": "A.003166",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatsgiPJ3rq.jpg?alt=media&token=4bcfaf02-e4f2-46ba-88f2-d12d3cfb299c",
+    "title": "وسادة متعددة الوظائف",
+    "price": 29.5,
+    "sale_price": 24.5,
+    "gtin": "none"
+  },
+  {
+    "id": 12,
+    "sku": "A.000520",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKHSg2ivl.jpg?alt=media&token=5d8e3a9d-f4fd-4bf2-a2ba-40c40f4b435e",
+    "title": "المشد الرجالي لإظهار العضلات",
+    "price": 25.8,
+    "sale_price": 20.8,
+    "gtin": "none"
+  },
+  {
+    "id": 13,
+    "sku": "A.003216",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatJxdOocIz.png?alt=media&token=8a013bc9-1988-4577-b20a-ebce717293f9",
+    "title": "مروحة عنق صغيرة يو اس بي بدون شفرات",
+    "price": 26.5,
+    "sale_price": 21.5,
+    "gtin": "none"
+  },
+  {
+    "id": 14,
+    "sku": "A.000958",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatwQsdYRFQ.jpg?alt=media&token=ccc6c8f8-20aa-42bb-8b7f-531891b8931d",
+    "title": "قاتل البعوض عن طريق الشفط الضوئي",
+    "price": 24.9,
+    "sale_price": 19.9,
+    "gtin": "none"
+  },
+  {
+    "id": 15,
+    "sku": "A.001407",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatPTfmnJXr.jpg?alt=media&token=517f0df9-725c-4cd0-b309-d956745c50f7",
+    "title": "اداة سحب الهواء",
+    "price": 26.2,
+    "sale_price": 21.2,
+    "gtin": "none"
+  },
+  {
+    "id": 16,
+    "sku": "A.000343",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1kiNs2Hz.jpg?alt=media&token=83ca0667-a63b-4b8c-9221-387233ad0f51",
+    "title": "جهاز إغلاق أكياس الطعام بإحكام",
+    "price": 45.8,
+    "sale_price": 40.8,
+    "gtin": "none"
+  },
+  {
+    "id": 17,
+    "sku": "A.000543",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQ55nIv7c.jpg?alt=media&token=5f0fe65b-fd96-4277-92a9-4df40a49659c",
+    "title": "بلوز نسائية لشد الجسم",
+    "price": 28.7,
+    "sale_price": 23.7,
+    "gtin": "none"
+  },
+  {
+    "id": 18,
+    "sku": "A.001376",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatWiuIanl3.jpg?alt=media&token=328e5ebe-6487-4dfe-a1c1-5c1c9ef59436",
+    "title": "مبخرة اللؤلؤ إلاكترونية",
+    "price": 28,
+    "sale_price": 23,
+    "gtin": "none"
+  },
+  {
+    "id": 19,
+    "sku": "A.001785",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaaterkomipk.jpg?alt=media&token=bc56fcf9-6082-4942-b145-4eec4337cb0c",
+    "title": "مظلة واقية من الشمس للزجاج الأمامي للسيارة",
+    "price": 21.1,
+    "sale_price": 16.1,
+    "gtin": "none"
+  },
+  {
+    "id": 20,
+    "sku": "A.000967",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat44ByaLqr.jpg?alt=media&token=a38fd14e-f9d6-42f5-bdbd-5518fc3a42a5",
+    "title": "حزام القطعة الواحدة لتنحيف للبطن والافخاد",
+    "price": 27.4,
+    "sale_price": 22.4,
+    "gtin": "none"
+  },
+  {
+    "id": 21,
+    "sku": "A.001077",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatICXKWYUD.jpg?alt=media&token=b26773d6-c896-4858-9ed4-f3c23065aea9",
+    "title": "فرد  نانو المحمول للتعقيم بالبخار",
+    "price": 32.6,
+    "sale_price": 27.6,
+    "gtin": "none"
+  },
+  {
+    "id": 22,
+    "sku": "A.001130",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1fdkH8hB.jpg?alt=media&token=f60ec3fa-d74d-4fe1-aa8c-e2807c503b9b",
+    "title": "جهاز تعقيم",
+    "price": 33.3,
+    "sale_price": 28.3,
+    "gtin": "none"
+  },
+  {
+    "id": 23,
+    "sku": "A.001181",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQ2AfcxGR.jfif?alt=media&token=0c9d05e2-896b-4bff-937f-0d31a31f82b8",
+    "title": "جهاز ازالة الشامات المنزلي",
+    "price": 26.3,
+    "sale_price": 21.3,
+    "gtin": "none"
+  },
+  {
+    "id": 24,
+    "sku": "A.001921",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6bM3peMz.jpg?alt=media&token=2632c5a0-910f-4404-8f4d-44f7abe354a8",
+    "title": "جهاز الكتروني",
+    "price": 24.1,
+    "sale_price": 19.1,
+    "gtin": "none"
+  },
+  {
+    "id": 25,
+    "sku": "A.002231",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6m0rHUuN.jpg?alt=media&token=d6a6556d-48f1-46e2-8832-596662b26df4",
+    "title": "كاميرا مراقبة لاسلكية شكل لمبة",
+    "price": 24.5,
+    "sale_price": 19.5,
+    "gtin": "none"
+  },
+  {
+    "id": 26,
+    "sku": "A.001182",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatMff1jBne.jpg?alt=media&token=4ea69768-e306-4d0c-9851-433be0c7916a",
+    "title": "مجموعة راس الدش",
+    "price": 24.4,
+    "sale_price": 19.4,
+    "gtin": "none"
+  },
+  {
+    "id": 27,
+    "sku": "A.001584",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatafGp4Ixa.jpg?alt=media&token=fd13389c-cee5-406f-bc67-e70074c549a3",
+    "title": "لعبة الصبارة للاطفال",
+    "price": 28.2,
+    "sale_price": 23.2,
+    "gtin": "none"
+  },
+  {
+    "id": 28,
+    "sku": "A.001134",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat4BtVUbC3.jpg?alt=media&token=7328b502-932d-4f4f-a62a-1e98ff9bb3ac",
+    "title": "ماكنة الحلاقة للاطفال",
+    "price": 32.6,
+    "sale_price": 27.6,
+    "gtin": "none"
+  },
+  {
+    "id": 29,
+    "sku": "A.001132",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat16lOFAhh.jpg?alt=media&token=215a9365-bdd3-46ce-9100-8b6a52739826",
+    "title": "مملس الشعر من كيمي",
+    "price": 26,
+    "sale_price": 21,
+    "gtin": "none"
+  },
+  {
+    "id": 30,
+    "sku": "A.001172",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatymutNkS8.jpeg?alt=media&token=08de4f89-6d52-46f3-aad7-121d0cb81320",
+    "title": "جهاز تمارين عضلات البطن مع دعم منزلي",
+    "price": 24.8,
+    "sale_price": 19.8,
+    "gtin": "none"
+  },
+  {
+    "id": 31,
+    "sku": "A.001189",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatJ5KbxEbR.jpg?alt=media&token=ae02ae42-3aa4-4302-9e4c-fb2f6898af31",
+    "title": "صنبور المياه الاستشعار التلقائي الأشعة تحت الحمراء",
+    "price": 31.6,
+    "sale_price": 26.6,
+    "gtin": "none"
+  },
+  {
+    "id": 32,
+    "sku": "A.001175",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatDmrU7bIG.crdownload?alt=media&token=48f6b7b6-fe87-495b-8b40-502ceaf66e8c",
+    "title": "لمبة قابلة للطي تعمل بالطاقة الشمسية",
+    "price": 26.8,
+    "sale_price": 21.8,
+    "gtin": "none"
+  },
+  {
+    "id": 33,
+    "sku": "A.001509",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQv12FuF3.jpg?alt=media&token=b6e04c78-292e-4b0d-9ae8-497250eff301",
+    "title": "موقد شبكي فولاذي قابل للطي",
+    "price": 28.5,
+    "sale_price": 23.5,
+    "gtin": "none"
+  },
+  {
+    "id": 34,
+    "sku": "A.002232",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatogHffDiV.webp?alt=media&token=f3972ac6-1f02-4bff-958b-b2087d03813a",
+    "title": "جهاز الحجامة الذكي",
+    "price": 27,
+    "sale_price": 22,
+    "gtin": "none"
+  },
+  {
+    "id": 35,
+    "sku": "A.001190",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat6Zic4Bus.jpg?alt=media&token=49d1921f-da87-4ce1-9d7d-68bd9f602c27",
+    "title": "مشط لازالة القمل",
+    "price": 24.2,
+    "sale_price": 19.2,
+    "gtin": "none"
+  },
+  {
+    "id": 36,
+    "sku": "A.001174",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaataWEBSFOV.jpg?alt=media&token=e8848c29-25a2-48da-90ea-8578a25695f6",
+    "title": "النظارات الشمسية مع سماعات بلوتوث لاسلكية",
+    "price": 26,
+    "sale_price": 21,
+    "gtin": "none"
+  },
+  {
+    "id": 37,
+    "sku": "A.000458",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatARHeuYRe.jpg?alt=media&token=3d30aecb-7062-47b6-9925-a83c3de93b3c",
+    "title": "مموج الشعر الاوتوماتيكي من سيكرت ويف",
+    "price": 29.7,
+    "sale_price": 24.7,
+    "gtin": "none"
+  },
+  {
+    "id": 38,
+    "sku": "A.000473",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatQiLXIOrT.jfif?alt=media&token=d9cba6d3-c2d4-4e33-a39f-f4e69bbd8199",
+    "title": "قلم تصليح يعمل بالبلاستيك السائل و الأشعة فوق البنفسجية",
+    "price": 25.6,
+    "sale_price": 20.6,
+    "gtin": "none"
+  },
+  {
+    "id": 39,
+    "sku": "A.001588",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatnuLDdjVd.jpg?alt=media&token=bf3dee9e-6f71-426c-bb1e-450050fada31",
+    "title": "موزع معجون أسنان بلاستيكي مع 4 اكواب",
+    "price": 29.5,
+    "sale_price": 24.5,
+    "gtin": "none"
+  },
+  {
+    "id": 40,
+    "sku": "A.000521",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatomzyRjvC.jpg?alt=media&token=207d5d48-cdb1-490a-8762-52c1c32ee3ea",
+    "title": "شورت نسائي لإخفاء الكرش من سلم لفت",
+    "price": 24.8,
+    "sale_price": 19.8,
+    "gtin": "none"
+  },
+  {
+    "id": 41,
+    "sku": "A.001133",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatemSNzd9t.png?alt=media&token=fb3a14db-795d-4c4a-9839-2fea612e86ff",
+    "title": "مملس الشعر البخاري",
+    "price": 34,
+    "sale_price": 29,
+    "gtin": "none"
+  },
+  {
+    "id": 42,
+    "sku": "A.001129",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatMiun2g1b.jpeg?alt=media&token=0b37f2c1-4714-4d4c-8126-a2491cf23e8e",
+    "title": "قفازات شواء قابلة للحرارة",
+    "price": 28.2,
+    "sale_price": 23.2,
+    "gtin": "none"
+  },
+  {
+    "id": 43,
+    "sku": "A.004619",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat19ECTdTF.jpg?alt=media&token=4a6ec6e2-69a6-4e37-b5b3-8786496c7978",
+    "title": "كريم إزالة الثآليل من سومفون",
+    "price": 19.6,
+    "sale_price": 14.6,
+    "gtin": "none"
+  },
+  {
+    "id": 44,
+    "sku": "A.000195",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatgsswVqZI.jpg?alt=media&token=1bb583d5-07b0-43f5-abc4-33a3ee6c52d8",
+    "title": "نظارة القيادة الليلية",
+    "price": 20.5,
+    "sale_price": 15.5,
+    "gtin": "none"
+  },
+  {
+    "id": 45,
+    "sku": "A.003541",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatxgvapQx6.jpg?alt=media&token=eb5dd8c1-80ae-4999-bff7-693777661de4",
+    "title": "مكنسة كهربائية محمولة 3 في 1",
+    "price": 23,
+    "sale_price": 18,
+    "gtin": "none"
+  },
+  {
+    "id": 46,
+    "sku": "A.001171",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatYDxlJtwk.jpg?alt=media&token=928656c5-425f-4f96-aad9-10edb07b2160",
+    "title": "حقيبة الطفل للسفر",
+    "price": 31.6,
+    "sale_price": 26.6,
+    "gtin": "none"
+  },
+  {
+    "id": 47,
+    "sku": "A.001150",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFSFjmUf7.jpg?alt=media&token=30faca46-0d12-489d-aeee-a92d9b50dd0a",
+    "title": "منشفة عمامة للشعر",
+    "price": 25.9,
+    "sale_price": 20.9,
+    "gtin": "none"
+  },
+  {
+    "id": 48,
+    "sku": "A.000997",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGrGdh6PK.jpg?alt=media&token=e0a65f03-6477-452f-b168-85a85af241b3",
+    "title": "مموج الشعر التلقائي اللاسلكي",
+    "price": 33.3,
+    "sale_price": 28.3,
+    "gtin": "none"
+  },
+  {
+    "id": 49,
+    "sku": "A.001587",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatBOcHq3jM.jpg?alt=media&token=c737a24c-dc86-4629-8064-bf5da74da83c",
+    "title": "سروال سباحة متغير اللون للرجال",
+    "price": 28.2,
+    "sale_price": 23.2,
+    "gtin": "none"
+  },
+  {
+    "id": 50,
+    "sku": "A.001179",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat7nVgrD8B.jpeg?alt=media&token=fdf8c373-68f5-48a4-93e4-36f85754177f",
+    "title": "حامل الهاتف المحمول",
+    "price": 29.6,
+    "sale_price": 24.6,
+    "gtin": "none"
+  },
+  {
+    "id": 51,
+    "sku": "A.001002",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGZIn9S3S.jpg?alt=media&token=bad0e62f-0c10-4d42-a9d3-d399d4f09121",
+    "title": "إضاءة مكياج احترافية لاسلكية من ستوديو جلو",
+    "price": 24.3,
+    "sale_price": 19.3,
+    "gtin": "none"
+  },
+  {
+    "id": 52,
+    "sku": "A.000973",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaathhE92nu7.png?alt=media&token=4b37e587-ce99-4f95-b342-81059233292a",
+    "title": "مشد  سويت شيبر لتنحيف البطن",
+    "price": 27,
+    "sale_price": 22,
+    "gtin": "none"
+  },
+  {
+    "id": 53,
+    "sku": "A.002041",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKhrVmJUx.jpg?alt=media&token=db577dc3-6a76-428c-98ce-5eae13aab806",
+    "title": "ماكنة الحلاقة الرجالية",
+    "price": 24.2,
+    "sale_price": 19.2,
+    "gtin": "none"
+  },
+  {
+    "id": 54,
+    "sku": "A.001309",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatGclZQvLo.jpg?alt=media&token=00b92f8a-1298-4dab-b1c9-1041dd9ec9ef",
+    "title": "كاميرا تصوير للسيارة امامية وخلفية",
+    "price": 30.1,
+    "sale_price": 25.1,
+    "gtin": "none"
+  },
+  {
+    "id": 55,
+    "sku": "A.001192",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatL3beMJ3P.jpg?alt=media&token=d606177e-fa73-40f5-be6e-c0fe38c0b227",
+    "title": "نظارة الرؤية",
+    "price": 24.2,
+    "sale_price": 19.2,
+    "gtin": "none"
+  },
+  {
+    "id": 56,
+    "sku": "A.001155",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat57oQCOOv.jpg?alt=media&token=5dc35a3d-3f65-4143-969d-33b9f97806df",
+    "title": "ستائر نافذة السيارة",
+    "price": 28.7,
+    "sale_price": 23.7,
+    "gtin": "none"
+  },
+  {
+    "id": 57,
+    "sku": "A.000996",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat7JxvKiu0.jpg?alt=media&token=1f049350-215d-45f5-9653-70119fdc96e1",
+    "title": "أداة ميكرو تاتش سولو لإزالة كامل شعر الجسم A.",
+    "price": 24.1,
+    "sale_price": 19.1,
+    "gtin": "none"
+  },
+  {
+    "id": 58,
+    "sku": "A.001079",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatjbHccluG.jpg?alt=media&token=9866fe95-4903-4745-a08a-a5d20332d03c",
+    "title": "جهاز التراسونيك لازالة الزيون والرؤوس السوداء",
+    "price": 27.3,
+    "sale_price": 22.3,
+    "gtin": "none"
+  },
+  {
+    "id": 59,
+    "sku": "A.000971",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKiNjrD8C.jpg?alt=media&token=0b04f00c-3a12-4ed6-a6fe-e745bdef552b",
+    "title": "جهاز ريفوفليكس للتمارين الرياضية",
+    "price": 27.3,
+    "sale_price": 22.3,
+    "gtin": "none"
+  },
+  {
+    "id": 60,
+    "sku": "A.001812",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatFDZAbmvN.jpg?alt=media&token=0cd157ba-187c-4baf-8cbe-ed38e814d2e5",
+    "title": "حزام شد البطن",
+    "price": 28.6,
+    "sale_price": 23.6,
+    "gtin": "none"
+  },
+  {
+    "id": 61,
+    "sku": "A.001862",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat1MgF0Uy8.png?alt=media&token=27ae5ca6-d284-4443-a899-368751d06913",
+    "title": "قطاعة خضروات متعددة الوظائف 5 في 1",
+    "price": 29,
+    "sale_price": 24,
+    "gtin": "none"
+  },
+  {
+    "id": 62,
+    "sku": "A.000159",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatRb9HMnpS.jpg?alt=media&token=6708d532-2cac-4f62-bf8d-0fffad5a01f7",
+    "title": "جهاز لشفط و إزالة الرؤوس السوداء",
+    "price": 25.9,
+    "sale_price": 20.9,
+    "gtin": "none"
+  },
+  {
+    "id": 63,
+    "sku": "A.003437",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatfoMWkS9B.jpg?alt=media&token=18900ce0-082c-4159-a96c-b11a057b0084",
+    "title": "لصقات علاج آلام الركبة",
+    "price": 24.8,
+    "sale_price": 19.8,
+    "gtin": "none"
+  },
+  {
+    "id": 64,
+    "sku": "A.000353",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatCl8LYlGn.jpg?alt=media&token=9e8baf58-aa96-4600-a34c-60b88f91ba5d",
+    "title": "لاصق مقاوم للماء لإصلاح التشققات و التسربات",
+    "price": 23.5,
+    "sale_price": 18.5,
+    "gtin": "none"
+  },
+  {
+    "id": 65,
+    "sku": "A.001461",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatAjq39NOh.jpg?alt=media&token=5d675629-110f-4908-b73e-93a774a22e65",
+    "title": "معقم فرشاة الأسنان الذكي متعدد الوظائف",
+    "price": 25,
+    "sale_price": 20,
+    "gtin": "none"
+  },
+  {
+    "id": 66,
+    "sku": "A.000344",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaatf0WF7awn.jpg?alt=media&token=4f7b8a35-f164-45e5-a5c5-1be69b97553f",
+    "title": "مغطس و جهاز مساج للقدمين",
+    "price": 33.6,
+    "sale_price": 28.6,
+    "gtin": "none"
+  },
+  {
+    "id": 67,
+    "sku": "A.001131",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatzIOHqJ1s.jpeg?alt=media&token=49804203-a589-44bf-9215-ebb3b27bbf7a",
+    "title": "سرير قابل للنفخ للسيارة",
+    "price": 31.8,
+    "sale_price": 26.8,
+    "gtin": "none"
+  },
+  {
+    "id": 68,
+    "sku": "A.004885",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatTqLk0OnX.jpg?alt=media&token=f2b5dfa4-a38d-40df-87ea-ae72451a5903",
+    "title": "كريم الكولاجين لعلاج الشعر التالف",
+    "price": 28.5,
+    "sale_price": 23.5,
+    "gtin": "none"
+  },
+  {
+    "id": 69,
+    "sku": "A.000065",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatolceXA50.jpg?alt=media&token=7b91d683-3223-453e-b042-be639dc09a59",
+    "title": "حزام نحت البطن و الخصر من سويت",
+    "price": 25.4,
+    "sale_price": 20.4,
+    "gtin": "none"
+  },
+  {
+    "id": 70,
+    "sku": "A.001925",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2Fashyaat3xXHBn9e.jpg?alt=media&token=0ec8a640-d869-4f0e-a48e-b232a7f84b63",
+    "title": "قطاعة اللحوم الكهربائية الأوتوماتيكية",
+    "price": 25.8,
+    "sale_price": 20.8,
+    "gtin": "none"
+  },
+  {
+    "id": 71,
+    "sku": "A.001338",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaathIBn6AdS.jpg?alt=media&token=b2c45bdd-b001-4093-a9a1-ed0f0d36669b",
+    "title": "مسن سكاكين كهربائي 2 عين",
+    "price": 29.6,
+    "sale_price": 24.6,
+    "gtin": "none"
+  },
+  {
+    "id": 72,
+    "sku": "A.002026",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatpwbQLFkE.jpg?alt=media&token=37fbeb98-3e11-49c5-9e05-5f0e79a24d89",
+    "title": "شامبو الشعر بالزنجبيل الاسود",
+    "price": 25.3,
+    "sale_price": 20.3,
+    "gtin": "none"
+  },
+  {
+    "id": 73,
+    "sku": "A.004144",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatLeh4Jz78.jpg?alt=media&token=724e6a90-d790-476d-ae41-dd9e7ba179b7",
+    "title": "قلم الترجمة عالي الدقة",
+    "price": 42.7,
+    "sale_price": 37.7,
+    "gtin": "none"
+  },
+  {
+    "id": 74,
+    "sku": "A.001188",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatKzJnA6VY.jpeg?alt=media&token=6af3a0e3-dc07-4e6e-abed-df1020c96be5",
+    "title": "نعل سيليكوني لزيادة الطول",
+    "price": 23.6,
+    "sale_price": 18.6,
+    "gtin": "none"
+  },
+  {
+    "id": 75,
+    "sku": "A.000544",
+    "image_link": "https://firebasestorage.googleapis.com/v0/b/ashyaatcrm.appspot.com/o/images%2FashyaatNXP6CmUh.webp?alt=media&token=5c18ef24-7878-4013-aafb-8e914e621226",
+    "title": "حزام لدعم وتقويم الظهر",
+    "price": 17.8,
+    "sale_price": 12.8,
+    "gtin": "none"
+  }
+]
