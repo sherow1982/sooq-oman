@@ -50,8 +50,8 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "🤖 GitHub Actions Bot"
         git add products-pages/*.html
-        git commit -m "🎨 Auto-update: Convert all product pages to professional template design
-        
+        git commit -m "🎨 Auto-update: Convert all product pages to professional template
+
 ✅ Updates Applied:
 - Modern gradient backgrounds and animations
 - Enhanced product image galleries with zoom
